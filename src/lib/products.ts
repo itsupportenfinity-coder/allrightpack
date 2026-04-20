@@ -19,7 +19,7 @@ export type Category = {
   blurb: string;
 };
 
-const ALL = raw as Product[];
+const ALL = raw as unknown as Product[];
 
 /* ------------------------------------------------------------------ */
 /* Auto-generated descriptions + specs (source site has none)         */
