@@ -1,0 +1,1934 @@
+[
+  {
+    "id": "bubble-bags",
+    "name": "Bubble Bags",
+    "category": "bubble-rolls",
+    "categoryLabel": "Bubble Rolls",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/bubble-bags.jpg",
+    "images": [
+      "/images/products/bubble-bags.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "bubble-wrap-10metre",
+    "name": "Bubble Wrap",
+    "category": "bubble-rolls",
+    "categoryLabel": "Bubble Rolls",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/bubble-wrap-10metre.webp",
+    "images": [
+      "/images/products/bubble-wrap-10metre.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "bubble-wrap-3-cut",
+    "name": "Bubble Wrap 3 Cut",
+    "category": "bubble-rolls",
+    "categoryLabel": "Bubble Rolls",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/bubble-wrap-3-cut.jpg",
+    "images": [
+      "/images/products/bubble-wrap-3-cut.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "cling-film-4kg",
+    "name": "Cling Film 4kg",
+    "category": "cling-film",
+    "categoryLabel": "Cling Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/cling-film-4kg.webp",
+    "images": [
+      "/images/products/cling-film-4kg.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "corrugated-rolls",
+    "name": "Corrugated Rolls",
+    "category": "corrugated-rolls",
+    "categoryLabel": "Corrugated Rolls",
+    "description": "",
+    "price": "50.000",
+    "currency": null,
+    "image": "/images/products/corrugated-rolls.jpg",
+    "images": [
+      "/images/products/corrugated-rolls.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "foam-rolls-1mm",
+    "name": "Foam Rolls 1mm",
+    "category": "foam-rolls",
+    "categoryLabel": "Foam Rolls",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/foam-rolls-1mm.jpg",
+    "images": [
+      "/images/products/foam-rolls-1mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "foam-rolls-2mm",
+    "name": "Foam Rolls 2mm",
+    "category": "foam-rolls",
+    "categoryLabel": "Foam Rolls",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/foam-rolls-2mm.jpg",
+    "images": [
+      "/images/products/foam-rolls-2mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "foam-rolls-3mm",
+    "name": "Foam Rolls 3mm",
+    "category": "foam-rolls",
+    "categoryLabel": "Foam Rolls",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/foam-rolls-3mm.jpg",
+    "images": [
+      "/images/products/foam-rolls-3mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "cotton-gloves",
+    "name": "Cotton Gloves",
+    "category": "gloves",
+    "categoryLabel": "Gloves",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/cotton-gloves.jpg",
+    "images": [
+      "/images/products/cotton-gloves.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "dotted-gloves",
+    "name": "Dotted Gloves",
+    "category": "gloves",
+    "categoryLabel": "Gloves",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/dotted-gloves.png",
+    "images": [
+      "/images/products/dotted-gloves.png"
+    ],
+    "tags": []
+  },
+  {
+    "id": "industrial-gloves",
+    "name": "Industrial Gloves",
+    "category": "gloves",
+    "categoryLabel": "Gloves",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/industrial-gloves.jpg",
+    "images": [
+      "/images/products/industrial-gloves.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "rubber-gloves",
+    "name": "Rubber Gloves",
+    "category": "gloves",
+    "categoryLabel": "Gloves",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/rubber-gloves.jpg",
+    "images": [
+      "/images/products/rubber-gloves.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "vinyl-gloves-blue",
+    "name": "Vinyl Gloves- Blue",
+    "category": "gloves",
+    "categoryLabel": "Gloves",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/vinyl-gloves-blue.jpg",
+    "images": [
+      "/images/products/vinyl-gloves-blue.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "vinyl-latex-gloves-black",
+    "name": "Vinyl Latex Gloves- Black",
+    "category": "gloves",
+    "categoryLabel": "Gloves",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/vinyl-latex-gloves-black.jpg",
+    "images": [
+      "/images/products/vinyl-latex-gloves-black.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "vinyl-transparent-gloves",
+    "name": "Vinyl Transparent Gloves",
+    "category": "gloves",
+    "categoryLabel": "Gloves",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/vinyl-transparent-gloves.jpg",
+    "images": [
+      "/images/products/vinyl-transparent-gloves.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "composite-strap-12mm",
+    "name": "Composite Strap 13mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/composite-strap-12mm.jpg",
+    "images": [
+      "/images/products/composite-strap-12mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "cord-composite-strap-16mm",
+    "name": "Composite Strap 16mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/cord-composite-strap-16mm.webp",
+    "images": [
+      "/images/products/cord-composite-strap-16mm.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "cord-composite-strap-19mm",
+    "name": "Composite Strap 19mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/cord-composite-strap-19mm.jpg",
+    "images": [
+      "/images/products/cord-composite-strap-19mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "cord-composite-strap-25mm",
+    "name": "Composite Strap 25mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/cord-composite-strap-25mm.jpg",
+    "images": [
+      "/images/products/cord-composite-strap-25mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "composite-strap-buckles-13mm",
+    "name": "Composite Strap Buckles 13mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/composite-strap-buckles-13mm.jpg",
+    "images": [
+      "/images/products/composite-strap-buckles-13mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "composite-strap-buckles-16mm",
+    "name": "Composite Strap Buckles 16mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/composite-strap-buckles-16mm.webp",
+    "images": [
+      "/images/products/composite-strap-buckles-16mm.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "composite-strap-buckles-19mm",
+    "name": "Composite Strap Buckles 19mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/composite-strap-buckles-19mm.jpg",
+    "images": [
+      "/images/products/composite-strap-buckles-19mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "composite-strap-buckles-25mm",
+    "name": "Composite Strap Buckles 25mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/composite-strap-buckles-25mm.jpg",
+    "images": [
+      "/images/products/composite-strap-buckles-25mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "metal-clips-15mm",
+    "name": "Metal Clips 15mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "17.000",
+    "currency": null,
+    "image": "/images/products/metal-clips-15mm.jpg",
+    "images": [
+      "/images/products/metal-clips-15mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "polyester-terephthalate-pet-strap-12mm",
+    "name": "Polyester (PET) Strap 12mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/polyester-terephthalate-pet-strap-12mm.webp",
+    "images": [
+      "/images/products/polyester-terephthalate-pet-strap-12mm.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "polyester-terephthalate-pet-strap-15mm",
+    "name": "Polyester (PET) Strap 15mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/polyester-terephthalate-pet-strap-15mm.webp",
+    "images": [
+      "/images/products/polyester-terephthalate-pet-strap-15mm.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "polyester-terephthalate-pet-strap-25mm",
+    "name": "Polyester (PET) Strap 25mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/polyester-terephthalate-pet-strap-25mm.jpg",
+    "images": [
+      "/images/products/polyester-terephthalate-pet-strap-25mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "polyester-terephthalate-pet-strap-9mm",
+    "name": "Polyester (PET) Strap 9mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/polyester-terephthalate-pet-strap-9mm.jpg",
+    "images": [
+      "/images/products/polyester-terephthalate-pet-strap-9mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "polypropylene-pp-strap-12mm",
+    "name": "Polypropylene (PP) Strap 12mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/polypropylene-pp-strap-12mm.jpg",
+    "images": [
+      "/images/products/polypropylene-pp-strap-12mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "polypropylene-pp-strap-15mm",
+    "name": "Polypropylene (PP) Strap 15mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/polypropylene-pp-strap-15mm.jpg",
+    "images": [
+      "/images/products/polypropylene-pp-strap-15mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "polypropylene-pp-strap-9mm",
+    "name": "Polypropylene (PP) Strap 9mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/polypropylene-pp-strap-9mm.jpg",
+    "images": [
+      "/images/products/polypropylene-pp-strap-9mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "steel-strap-15mm",
+    "name": "Steel Strap 15mm",
+    "category": "industrial-strapping",
+    "categoryLabel": "Industrial Strapping",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/steel-strap-15mm.jpg",
+    "images": [
+      "/images/products/steel-strap-15mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-15x400",
+    "name": "Shrink Film 15x400",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-15x400.jpg",
+    "images": [
+      "/images/products/shrink-film-15x400.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-15x430",
+    "name": "Shrink Film 15x430",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-15x430.jpg",
+    "images": [
+      "/images/products/shrink-film-15x430.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-15x450",
+    "name": "Shrink Film 15x450",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-15x450.jpg",
+    "images": [
+      "/images/products/shrink-film-15x450.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-15x500",
+    "name": "Shrink Film 15x500",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-15x500.jpg",
+    "images": [
+      "/images/products/shrink-film-15x500.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-19x255",
+    "name": "Shrink Film 19x255",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-19x255.jpg",
+    "images": [
+      "/images/products/shrink-film-19x255.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-19x305",
+    "name": "Shrink Film 19x305",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-19x305.jpg",
+    "images": [
+      "/images/products/shrink-film-19x305.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-19x355",
+    "name": "Shrink Film 19x355",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-19x355.jpg",
+    "images": [
+      "/images/products/shrink-film-19x355.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-19x405",
+    "name": "Shrink Film 19x405",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-19x405.jpg",
+    "images": [
+      "/images/products/shrink-film-19x405.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-19x455",
+    "name": "Shrink Film 19x455",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-19x455.jpg",
+    "images": [
+      "/images/products/shrink-film-19x455.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-19x505",
+    "name": "Shrink Film 19x505",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-19x505.jpg",
+    "images": [
+      "/images/products/shrink-film-19x505.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-19x555",
+    "name": "Shrink Film 19x555",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-19x555.jpg",
+    "images": [
+      "/images/products/shrink-film-19x555.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-19x605",
+    "name": "Shrink Film 19x605",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-19x605.jpg",
+    "images": [
+      "/images/products/shrink-film-19x605.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-25x255",
+    "name": "Shrink Film 25x255",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-25x255.jpg",
+    "images": [
+      "/images/products/shrink-film-25x255.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-25x305",
+    "name": "Shrink Film 25x305",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-25x305.jpg",
+    "images": [
+      "/images/products/shrink-film-25x305.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-25x355",
+    "name": "Shrink Film 25x355",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-25x355.jpg",
+    "images": [
+      "/images/products/shrink-film-25x355.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-25x405",
+    "name": "Shrink Film 25x405",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-25x405.jpg",
+    "images": [
+      "/images/products/shrink-film-25x405.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-25x455",
+    "name": "Shrink Film 25x455",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-25x455.jpg",
+    "images": [
+      "/images/products/shrink-film-25x455.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-25x505",
+    "name": "Shrink Film 25x505",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-25x505.jpg",
+    "images": [
+      "/images/products/shrink-film-25x505.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-25x555",
+    "name": "Shrink Film 25x555",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-25x555.jpg",
+    "images": [
+      "/images/products/shrink-film-25x555.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "shrink-film-25x605",
+    "name": "Shrink Film 25x605",
+    "category": "pof-shrink-film",
+    "categoryLabel": "POF Shrink Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/shrink-film-25x605.jpg",
+    "images": [
+      "/images/products/shrink-film-25x605.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "automatic-juice-cup-sealing-machine",
+    "name": "Automatic Juice Cup Sealing Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "500.000",
+    "currency": null,
+    "image": "/images/products/automatic-juice-cup-sealing-machine.jpg",
+    "images": [
+      "/images/products/automatic-juice-cup-sealing-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "band-sealing-machine",
+    "name": "Band Sealing Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "200.000",
+    "currency": null,
+    "image": "/images/products/band-sealing-machine.jpg",
+    "images": [
+      "/images/products/band-sealing-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "carton-sealer-machine",
+    "name": "Carton Sealer Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "400.000",
+    "currency": null,
+    "image": "/images/products/carton-sealer-machine.jpg",
+    "images": [
+      "/images/products/carton-sealer-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "date-printing-machine",
+    "name": "Date Printing Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/date-printing-machine.jpg",
+    "images": [
+      "/images/products/date-printing-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "double-chamber-vaccum-sealer-machine",
+    "name": "Double Chamber Vaccum Sealer Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/double-chamber-vaccum-sealer-machine.png",
+    "images": [
+      "/images/products/double-chamber-vaccum-sealer-machine.png"
+    ],
+    "tags": []
+  },
+  {
+    "id": "flow-wrapping-machine",
+    "name": "Flow Wrapping Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/flow-wrapping-machine.webp",
+    "images": [
+      "/images/products/flow-wrapping-machine.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "manual-cling-film-sealing-machine",
+    "name": "Manual Cling Film Sealing Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/manual-cling-film-sealing-machine.webp",
+    "images": [
+      "/images/products/manual-cling-film-sealing-machine.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "manual-juice-cup-sealing-machine",
+    "name": "Manual Juice Cup Sealing Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "500.000",
+    "currency": null,
+    "image": "/images/products/manual-juice-cup-sealing-machine.jpg",
+    "images": [
+      "/images/products/manual-juice-cup-sealing-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "pof-shrink-film-automatic-machine",
+    "name": "POF Shrink Film Automatic Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/pof-shrink-film-automatic-machine.jpg",
+    "images": [
+      "/images/products/pof-shrink-film-automatic-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "pof-shrink-film-manual-machine",
+    "name": "POF Shrink Film Manual Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/pof-shrink-film-manual-machine.jpg",
+    "images": [
+      "/images/products/pof-shrink-film-manual-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "pof-shrink-film-semi-automatic-machine",
+    "name": "POF Shrink Film Semi Automatic Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/pof-shrink-film-semi-automatic-machine.jpg",
+    "images": [
+      "/images/products/pof-shrink-film-semi-automatic-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "pallet-stretch-wrapping-machine",
+    "name": "Pallet Stretch Wrapping Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "500.000",
+    "currency": null,
+    "image": "/images/products/pallet-stretch-wrapping-machine.jpg",
+    "images": [
+      "/images/products/pallet-stretch-wrapping-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "semi-automatic-juice-cup-sealing-machine",
+    "name": "Semi - Automatic Juice Cup Sealing Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "500.000",
+    "currency": null,
+    "image": "/images/products/semi-automatic-juice-cup-sealing-machine.jpg",
+    "images": [
+      "/images/products/semi-automatic-juice-cup-sealing-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "single-chamber-vaccum-sealer-machine",
+    "name": "Single Chamber Vaccum Sealer Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/single-chamber-vaccum-sealer-machine.webp",
+    "images": [
+      "/images/products/single-chamber-vaccum-sealer-machine.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "strapping-machine",
+    "name": "Strapping Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/strapping-machine.jpg",
+    "images": [
+      "/images/products/strapping-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "table-top-vacuum-machine",
+    "name": "Table Top Vacuum Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/table-top-vacuum-machine.webp",
+    "images": [
+      "/images/products/table-top-vacuum-machine.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "vacuum-sealer-machine",
+    "name": "Vacuum Sealer Machine",
+    "category": "machines-16",
+    "categoryLabel": "Packaging Machines",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/vacuum-sealer-machine.jpg",
+    "images": [
+      "/images/products/vacuum-sealer-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "aluminum-tape",
+    "name": "Aluminum Tape",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/aluminum-tape.jpg",
+    "images": [
+      "/images/products/aluminum-tape.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "barcode-label-printer",
+    "name": "Barcode Label Printer",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/barcode-label-printer.webp",
+    "images": [
+      "/images/products/barcode-label-printer.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "black-packing-tape-1000-yard",
+    "name": "Black Packing Tape 1000 Yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/black-packing-tape-1000-yard.webp",
+    "images": [
+      "/images/products/black-packing-tape-1000-yard.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "blue-packing-tape-1000-yard",
+    "name": "Blue Packing Tape 1000 Yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/blue-packing-tape-1000-yard.jpg",
+    "images": [
+      "/images/products/blue-packing-tape-1000-yard.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "brown-packing-tape-100-yard",
+    "name": "Brown Packing Tape 100 Yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/brown-packing-tape-100-yard.jpg",
+    "images": [
+      "/images/products/brown-packing-tape-100-yard.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "brown-packing-tape-1000-yard",
+    "name": "Brown Packing Tape 1000 Yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/brown-packing-tape-1000-yard.jpg",
+    "images": [
+      "/images/products/brown-packing-tape-1000-yard.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "brown-packing-tape-70-yard",
+    "name": "Brown Packing Tape 70 Yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/brown-packing-tape-70-yard.png",
+    "images": [
+      "/images/products/brown-packing-tape-70-yard.png"
+    ],
+    "tags": []
+  },
+  {
+    "id": "caution-tape",
+    "name": "Caution Tape",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/caution-tape.webp",
+    "images": [
+      "/images/products/caution-tape.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "transparent-tape-1",
+    "name": "Clear Tape 1\"",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/transparent-tape-1.jpg",
+    "images": [
+      "/images/products/transparent-tape-1.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "clear-tape-100-yard-1",
+    "name": "Clear Tape 100 Yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/clear-tape-100-yard-1.jpg",
+    "images": [
+      "/images/products/clear-tape-100-yard-1.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "clear-tape-1000-yard",
+    "name": "Clear Tape 1000 Yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/clear-tape-1000-yard.webp",
+    "images": [
+      "/images/products/clear-tape-1000-yard.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "clear-tape-70-yard",
+    "name": "Clear Tape 70 yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/clear-tape-70-yard.jpg",
+    "images": [
+      "/images/products/clear-tape-70-yard.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "composite-strap-tensioner-1",
+    "name": "Composite Strap Tensioner",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/composite-strap-tensioner-1.jpg",
+    "images": [
+      "/images/products/composite-strap-tensioner-1.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "custom-printed-tape",
+    "name": "Custom Printed Tape",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/custom-printed-tape.jpg",
+    "images": [
+      "/images/products/custom-printed-tape.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "double-sided-tape",
+    "name": "Double Sided Tape",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/double-sided-tape.jpg",
+    "images": [
+      "/images/products/double-sided-tape.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "foam-rolls",
+    "name": "Foam Rolls",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/foam-rolls.jpg",
+    "images": [
+      "/images/products/foam-rolls.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "fragile-tape",
+    "name": "Fragile Tape",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/fragile-tape.jpg",
+    "images": [
+      "/images/products/fragile-tape.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "masking-tape-1",
+    "name": "Masking Tape 1\"",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/masking-tape-1.webp",
+    "images": [
+      "/images/products/masking-tape-1.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "masking-tape-2",
+    "name": "Masking Tape 2\"",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/masking-tape-2.jpg",
+    "images": [
+      "/images/products/masking-tape-2.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "red-tape-100-yard",
+    "name": "Red Tape 100 Yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/red-tape-100-yard.jpg",
+    "images": [
+      "/images/products/red-tape-100-yard.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "red-tape-1000-yard",
+    "name": "Red Tape 1000 Yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/red-tape-1000-yard.jpg",
+    "images": [
+      "/images/products/red-tape-1000-yard.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "red-tape-70-yard",
+    "name": "Red Tape 70 Yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/red-tape-70-yard.jpg",
+    "images": [
+      "/images/products/red-tape-70-yard.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "scotch-tape-3-4",
+    "name": "Scotch Tape 3/4\"",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/scotch-tape-3-4.webp",
+    "images": [
+      "/images/products/scotch-tape-3-4.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "special-offer-tapes",
+    "name": "Special Offer Tapes",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/special-offer-tapes.png",
+    "images": [
+      "/images/products/special-offer-tapes.png"
+    ],
+    "tags": []
+  },
+  {
+    "id": "stationary-tapes",
+    "name": "Stationary Tapes",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/stationary-tapes.webp",
+    "images": [
+      "/images/products/stationary-tapes.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "steel-strapping-cutter",
+    "name": "Steel Strapping Cutter",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/steel-strapping-cutter.jpg",
+    "images": [
+      "/images/products/steel-strapping-cutter.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "yellow-tape-100-yard",
+    "name": "Yellow Packing  Tape 100 yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/yellow-tape-100-yard.jpg",
+    "images": [
+      "/images/products/yellow-tape-100-yard.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "yellow-tape-70-yard",
+    "name": "Yellow Packing Tape 70 yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/yellow-tape-70-yard.jpg",
+    "images": [
+      "/images/products/yellow-tape-70-yard.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "yellow-tape-1000-yard",
+    "name": "Yellow Tape 1000 Yard",
+    "category": "tapes",
+    "categoryLabel": "Packing Tapes",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/yellow-tape-1000-yard.jpg",
+    "images": [
+      "/images/products/yellow-tape-1000-yard.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "composite-strap-tensioner",
+    "name": "Composite Strap Tensioner",
+    "category": "tools",
+    "categoryLabel": "Packing Tools",
+    "description": "Made in China",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/composite-strap-tensioner.jpg",
+    "images": [
+      "/images/products/composite-strap-tensioner.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "desktop-tape-dispenser",
+    "name": "Desktop Tape Dispenser",
+    "category": "tools",
+    "categoryLabel": "Packing Tools",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/desktop-tape-dispenser.jpg",
+    "images": [
+      "/images/products/desktop-tape-dispenser.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "heavy-duty-strapping-dispenser",
+    "name": "Heavy Duty Strapping Dispenser",
+    "category": "tools",
+    "categoryLabel": "Packing Tools",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/heavy-duty-strapping-dispenser.jpg",
+    "images": [
+      "/images/products/heavy-duty-strapping-dispenser.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "hot-air-gun",
+    "name": "Hot Air Gun",
+    "category": "tools",
+    "categoryLabel": "Packing Tools",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/hot-air-gun.jpg",
+    "images": [
+      "/images/products/hot-air-gun.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "impulse-plastic-sealer",
+    "name": "Impulse Plastic Sealer",
+    "category": "tools",
+    "categoryLabel": "Packing Tools",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/impulse-plastic-sealer.jpg",
+    "images": [
+      "/images/products/impulse-plastic-sealer.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "manual-pp-strap-packing-tool",
+    "name": "Manual PP Strap Packing Tool",
+    "category": "tools",
+    "categoryLabel": "Packing Tools",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/manual-pp-strap-packing-tool.jpg",
+    "images": [
+      "/images/products/manual-pp-strap-packing-tool.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "manual-stretch-film-dispenser",
+    "name": "Manual Stretch Film Dispenser",
+    "category": "tools",
+    "categoryLabel": "Packing Tools",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/manual-stretch-film-dispenser.jpg",
+    "images": [
+      "/images/products/manual-stretch-film-dispenser.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "neck-plastic-bag-sealer-machine",
+    "name": "Neck Plastic Bag Sealer Machine",
+    "category": "tools",
+    "categoryLabel": "Packing Tools",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/neck-plastic-bag-sealer-machine.jpg",
+    "images": [
+      "/images/products/neck-plastic-bag-sealer-machine.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "packing-tape-dispenser",
+    "name": "Packing Tape Dispenser",
+    "category": "tools",
+    "categoryLabel": "Packing Tools",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/packing-tape-dispenser.webp",
+    "images": [
+      "/images/products/packing-tape-dispenser.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "pneumatic-tool-for-pet-strapping",
+    "name": "Pneumatic Tool For Pet Strapping",
+    "category": "tools",
+    "categoryLabel": "Packing Tools",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/pneumatic-tool-for-pet-strapping.webp",
+    "images": [
+      "/images/products/pneumatic-tool-for-pet-strapping.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "scotch-tape-dispenser",
+    "name": "Scotch Tape Dispenser",
+    "category": "tools",
+    "categoryLabel": "Packing Tools",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/scotch-tape-dispenser.jpg",
+    "images": [
+      "/images/products/scotch-tape-dispenser.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "stretch-film-black",
+    "name": "Stretch Film Black",
+    "category": "stretch-film",
+    "categoryLabel": "Stretch Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/stretch-film-black.webp",
+    "images": [
+      "/images/products/stretch-film-black.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "stretch-film-machine-roll-20mic",
+    "name": "Stretch film - Machine Roll 20mic",
+    "category": "stretch-film",
+    "categoryLabel": "Stretch Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/stretch-film-machine-roll-20mic.jpg",
+    "images": [
+      "/images/products/stretch-film-machine-roll-20mic.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "stretch-film-machine-roll-23mic",
+    "name": "Stretch film - Machine Roll 23mic",
+    "category": "stretch-film",
+    "categoryLabel": "Stretch Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/stretch-film-machine-roll-23mic.jpg",
+    "images": [
+      "/images/products/stretch-film-machine-roll-23mic.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "stretch-film-2-5kg",
+    "name": "Stretch film 2.5kg",
+    "category": "stretch-film",
+    "categoryLabel": "Stretch Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/stretch-film-2-5kg.jpg",
+    "images": [
+      "/images/products/stretch-film-2-5kg.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "stretch-film-2kg",
+    "name": "Stretch film 2kg",
+    "category": "stretch-film",
+    "categoryLabel": "Stretch Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/stretch-film-2kg.jpg",
+    "images": [
+      "/images/products/stretch-film-2kg.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "stretch-film-3kg",
+    "name": "Stretch film 3kg",
+    "category": "stretch-film",
+    "categoryLabel": "Stretch Film",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/stretch-film-3kg.jpg",
+    "images": [
+      "/images/products/stretch-film-3kg.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "printed-thermal-label",
+    "name": "Printed Thermal Label",
+    "category": "barcode-labels",
+    "categoryLabel": "Thermal Labels",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/printed-thermal-label.jpg",
+    "images": [
+      "/images/products/printed-thermal-label.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "barcode-label-100-x-50-x-500-core-40mm",
+    "name": "Thermal Label 100 x 50 x 500  core 40mm",
+    "category": "barcode-labels",
+    "categoryLabel": "Thermal Labels",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/barcode-label-100-x-50-x-500-core-40mm.jpg",
+    "images": [
+      "/images/products/barcode-label-100-x-50-x-500-core-40mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "barcode-label-100-x-75-x-500-core-40mm",
+    "name": "Thermal Label 100 x 75 x 500 core 40mm",
+    "category": "barcode-labels",
+    "categoryLabel": "Thermal Labels",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/barcode-label-100-x-75-x-500-core-40mm.webp",
+    "images": [
+      "/images/products/barcode-label-100-x-75-x-500-core-40mm.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "barcode-label-100x150x-1000-core-3inch-76mm",
+    "name": "Thermal Label 100x150x 1000  core\u00a03inch\u00a0(76mm)",
+    "category": "barcode-labels",
+    "categoryLabel": "Thermal Labels",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/barcode-label-100x150x-1000-core-3inch-76mm.jpg",
+    "images": [
+      "/images/products/barcode-label-100x150x-1000-core-3inch-76mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "barcode-label-100x150x-500-core-40mm",
+    "name": "Thermal Label 100x150x 500  core 40mm",
+    "category": "barcode-labels",
+    "categoryLabel": "Thermal Labels",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/barcode-label-100x150x-500-core-40mm.png",
+    "images": [
+      "/images/products/barcode-label-100x150x-500-core-40mm.png"
+    ],
+    "tags": []
+  },
+  {
+    "id": "barcode-label-100x150x-500-core-3inch-76mm",
+    "name": "Thermal Label 100x150x 500 core 3inch (76mm)",
+    "category": "barcode-labels",
+    "categoryLabel": "Thermal Labels",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/barcode-label-100x150x-500-core-3inch-76mm.jpg",
+    "images": [
+      "/images/products/barcode-label-100x150x-500-core-3inch-76mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "barcode-lablel-38-x-25-x-5000-3inch-76mm",
+    "name": "Thermal Label 38 x 25 x 5000 3inch (76mm)",
+    "category": "barcode-labels",
+    "categoryLabel": "Thermal Labels",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/barcode-lablel-38-x-25-x-5000-3inch-76mm.webp",
+    "images": [
+      "/images/products/barcode-lablel-38-x-25-x-5000-3inch-76mm.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "barcode-label-50-x-25-x1000",
+    "name": "Thermal Label 50 x 25 x1000",
+    "category": "barcode-labels",
+    "categoryLabel": "Thermal Labels",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/barcode-label-50-x-25-x1000.webp",
+    "images": [
+      "/images/products/barcode-label-50-x-25-x1000.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "barcode-label-50-x-25-x5000-core-3inch-76mm",
+    "name": "Thermal Label 50 x 25 x5000 core 3inch (76mm)",
+    "category": "barcode-labels",
+    "categoryLabel": "Thermal Labels",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/barcode-label-50-x-25-x5000-core-3inch-76mm.jpg",
+    "images": [
+      "/images/products/barcode-label-50-x-25-x5000-core-3inch-76mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "barcode-label-58-x-38-x1000",
+    "name": "Thermal Label 58 x 38 x1000",
+    "category": "barcode-labels",
+    "categoryLabel": "Thermal Labels",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/barcode-label-58-x-38-x1000.jpg",
+    "images": [
+      "/images/products/barcode-label-58-x-38-x1000.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "barcode-label-75-x-50-x1000-core-40mm",
+    "name": "Thermal Label 75 x 50 x1000 core 40mm",
+    "category": "barcode-labels",
+    "categoryLabel": "Thermal Labels",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/barcode-label-75-x-50-x1000-core-40mm.webp",
+    "images": [
+      "/images/products/barcode-label-75-x-50-x1000-core-40mm.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "barcode-lablel-38-x-25-x-1000",
+    "name": "Thermal Lablel 38 x 25 x 1000",
+    "category": "barcode-labels",
+    "categoryLabel": "Thermal Labels",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/barcode-lablel-38-x-25-x-1000.jpg",
+    "images": [
+      "/images/products/barcode-lablel-38-x-25-x-1000.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "knet-rolls",
+    "name": "Knet Rolls",
+    "category": "thermal-roll",
+    "categoryLabel": "Thermal Paper Roll",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/knet-rolls.jpg",
+    "images": [
+      "/images/products/knet-rolls.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "thermal-roll-80x75",
+    "name": "Thermal Roll 80x75",
+    "category": "thermal-roll",
+    "categoryLabel": "Thermal Paper Roll",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/thermal-roll-80x75.webp",
+    "images": [
+      "/images/products/thermal-roll-80x75.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "thermal-roll-80x80-48gsm",
+    "name": "Thermal Roll 80x80 48gsm",
+    "category": "thermal-roll",
+    "categoryLabel": "Thermal Paper Roll",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/thermal-roll-80x80-48gsm.jpg",
+    "images": [
+      "/images/products/thermal-roll-80x80-48gsm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "thermal-roll-80x80-55gsm",
+    "name": "Thermal Roll 80x80 55gsm",
+    "category": "thermal-roll",
+    "categoryLabel": "Thermal Paper Roll",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/thermal-roll-80x80-55gsm.jpg",
+    "images": [
+      "/images/products/thermal-roll-80x80-55gsm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "printed-vacuum-bags",
+    "name": "Printed Vacuum Bags",
+    "category": "vaccum-pouches",
+    "categoryLabel": "Vacuum Bags",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/printed-vacuum-bags.jpg",
+    "images": [
+      "/images/products/printed-vacuum-bags.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "vaccum-pouches-150mm-x-200mm",
+    "name": "Vacuum Bags 150mm x 200mm",
+    "category": "vaccum-pouches",
+    "categoryLabel": "Vacuum Bags",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/vaccum-pouches-150mm-x-200mm.webp",
+    "images": [
+      "/images/products/vaccum-pouches-150mm-x-200mm.webp"
+    ],
+    "tags": []
+  },
+  {
+    "id": "vaccum-pouches-200mm-x-300mm",
+    "name": "Vacuum Bags 200mm x 300mm",
+    "category": "vaccum-pouches",
+    "categoryLabel": "Vacuum Bags",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/vaccum-pouches-200mm-x-300mm.jpg",
+    "images": [
+      "/images/products/vaccum-pouches-200mm-x-300mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "vaccum-pouches-250mm-x-350mm",
+    "name": "Vacuum Bags 250mm x 350mm",
+    "category": "vaccum-pouches",
+    "categoryLabel": "Vacuum Bags",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/vaccum-pouches-250mm-x-350mm.jpg",
+    "images": [
+      "/images/products/vaccum-pouches-250mm-x-350mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "vaccum-pouches-300mm-x-400mm",
+    "name": "Vacuum Bags 300mm x 400mm",
+    "category": "vaccum-pouches",
+    "categoryLabel": "Vacuum Bags",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/vaccum-pouches-300mm-x-400mm.jpg",
+    "images": [
+      "/images/products/vaccum-pouches-300mm-x-400mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "vaccum-pouches-350mm-x-450mm",
+    "name": "Vacuum Bags 350mm x 450mm",
+    "category": "vaccum-pouches",
+    "categoryLabel": "Vacuum Bags",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/vaccum-pouches-350mm-x-450mm.jpg",
+    "images": [
+      "/images/products/vaccum-pouches-350mm-x-450mm.jpg"
+    ],
+    "tags": []
+  },
+  {
+    "id": "vaccum-bags",
+    "name": "Vacuum Bags 400mm x 600mm",
+    "category": "vaccum-pouches",
+    "categoryLabel": "Vacuum Bags",
+    "description": "",
+    "price": "100.000",
+    "currency": null,
+    "image": "/images/products/vaccum-bags.webp",
+    "images": [
+      "/images/products/vaccum-bags.webp"
+    ],
+    "tags": []
+  }
+]
