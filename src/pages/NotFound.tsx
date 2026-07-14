@@ -6,6 +6,33 @@ const NotFound = () => {
 
   useEffect(() => {
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
+    const prevTitle = document.title;
+    document.title = "Page Not Found — All Right Pack";
+
+    const setMeta = (selector: string, attr: string, name: string, content: string) => {
+      let el = document.head.querySelector<HTMLMetaElement>(selector);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute(attr, name);
+        document.head.appendChild(el);
+      }
+      const prev = el.getAttribute("content");
+      el.setAttribute("content", content);
+      return () => {
+        if (prev !== null) el!.setAttribute("content", prev);
+      };
+    };
+
+    const restoreDesc = setMeta('meta[name="description"]', "name", "description", "The page you're looking for doesn't exist. Return to the All Right Pack home page to browse packaging products.");
+    const restoreOgTitle = setMeta('meta[property="og:title"]', "property", "og:title", "Page Not Found — All Right Pack");
+    const restoreOgDesc = setMeta('meta[property="og:description"]', "property", "og:description", "The page you're looking for doesn't exist. Return to the All Right Pack home page.");
+
+    return () => {
+      document.title = prevTitle;
+      restoreDesc();
+      restoreOgTitle();
+      restoreOgDesc();
+    };
   }, [location.pathname]);
 
   return (
@@ -22,3 +49,4 @@ const NotFound = () => {
 };
 
 export default NotFound;
+

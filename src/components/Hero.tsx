@@ -80,7 +80,11 @@ export default function Hero() {
               key={s.src}
               src={s.src}
               alt={s.badge}
+              width={1200}
+              height={960}
               loading={i === 0 ? "eager" : "lazy"}
+              fetchPriority={i === 0 ? "high" : "auto"}
+              decoding={i === 0 ? "sync" : "async"}
               className={`absolute inset-0 w-full h-full object-cover crisp-img transition-opacity duration-700 ${
                 i === idx ? "opacity-100" : "opacity-0"
               }`}
