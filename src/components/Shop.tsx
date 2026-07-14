@@ -47,6 +47,8 @@ export default function Shop({
           <div className="relative md:w-80">
             <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[hsl(var(--gray))]" />
             <input
+              type="search"
+              aria-label="Search products"
               value={query}
               onChange={e => {
                 setQuery(e.target.value);

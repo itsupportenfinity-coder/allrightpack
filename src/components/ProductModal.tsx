@@ -121,20 +121,22 @@ export default function ProductModal({
 
             {/* Quantity */}
             <div className="mt-5 flex items-center gap-3">
-              <span className="text-[11px] cond font-bold uppercase tracking-wider text-[hsl(var(--gray))]">
+              <label htmlFor="product-qty" className="text-[11px] cond font-bold uppercase tracking-wider text-[hsl(var(--gray))]">
                 Qty:
-              </span>
+              </label>
               <div className="inline-flex items-center border border-input rounded-md">
                 <button
                   onClick={() => setQty(q => Math.max(1, q - 1))}
                   className="w-9 h-9 flex items-center justify-center text-[hsl(var(--gray-dark))] hover:bg-brand-green-pale"
-                  aria-label="Decrease"
+                  aria-label="Decrease quantity"
                 >
                   <Minus className="w-3.5 h-3.5" />
                 </button>
                 <input
+                  id="product-qty"
                   type="number"
                   min={1}
+                  aria-label="Quantity"
                   value={qty}
                   onChange={e => setQty(Math.max(1, parseInt(e.target.value || "1", 10)))}
                   className="w-12 h-9 text-center text-sm font-bold border-x border-input focus:outline-none"
@@ -142,7 +144,7 @@ export default function ProductModal({
                 <button
                   onClick={() => setQty(q => q + 1)}
                   className="w-9 h-9 flex items-center justify-center text-[hsl(var(--gray-dark))] hover:bg-brand-green-pale"
-                  aria-label="Increase"
+                  aria-label="Increase quantity"
                 >
                   <Plus className="w-3.5 h-3.5" />
                 </button>
