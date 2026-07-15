@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { allProducts, getCategories, type Product } from "@/lib/products";
 import { Search } from "lucide-react";
 
@@ -28,6 +28,10 @@ export default function Shop({
     }
     return list;
   }, [activeCategory, query]);
+
+  useEffect(() => {
+    setShown(PAGE);
+  }, [activeCategory]);
 
   const visible = filtered.slice(0, shown);
   const hasMore = filtered.length > visible.length;
