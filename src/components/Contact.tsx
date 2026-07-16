@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -30,7 +30,7 @@ export default function Contact() {
             <ContactCard
               icon={MapPin}
               title="Visit Our Store"
-              lines={["Kuwait — find us on Google Maps"]}
+              lines={["Find our store on Google Maps"]}
               href="https://maps.app.goo.gl/htobcgNL33Xa3U1W8"
             />
             <ContactCard
@@ -47,14 +47,18 @@ export default function Contact() {
             <p className="mt-4 text-white/90 text-sm leading-relaxed">
               Whether you're a small shop or a large industrial operation, we'll get you the right packaging solution at the right price — fast.
             </p>
-            <div className="mt-6 flex flex-col sm:flex-row gap-3">
+            <span className="block mt-4 text-xs text-white/70">
+              Our team is available on WhatsApp<br />
+              Sat–Thu &bull; 8 AM – 6 PM
+            </span>
+            <div className="mt-4 flex flex-col sm:flex-row gap-3">
               <a
                 href="https://wa.me/96560005276?text=Hi%20All%20Right%20Pack%2C%20I%27d%20like%20a%20quote"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 cond font-bold uppercase tracking-wider text-sm bg-white text-brand-green px-6 py-3 rounded-md hover:bg-brand-green-pale transition-colors"
               >
-                💬 WhatsApp Us
+                <MessageCircle className="w-4 h-4" /> WhatsApp Us
               </a>
               <a
                 href="tel:+96560005276"
