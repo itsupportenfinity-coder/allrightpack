@@ -10,7 +10,7 @@ const ITEMS = [
 
 export default function WhyUs() {
   return (
-    <section id="why" className="py-16 md:py-24 bg-white">
+    <section id="why" className="py-12 md:py-16 bg-white">
       <div className="container-arp">
         <div className="text-center mb-12">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-brand-green mb-3 cond">

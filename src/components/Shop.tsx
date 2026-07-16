@@ -42,7 +42,7 @@ export default function Shop({
   const hasMore = filtered.length > visible.length;
 
   return (
-    <section id="products" className="py-16 md:py-24 bg-[hsl(var(--off))]">
+    <section id="products" className="py-12 md:py-16 bg-[hsl(var(--off))]">
       <div className="container-arp">
         <div className="flex flex-col md:flex-row gap-6 mb-4">
           <div>
@@ -78,7 +78,7 @@ export default function Shop({
         </div>
 
         {/* Filter tabs */}
-        <div className="flex gap-2 overflow-x-auto pb-3 mb-6 -mx-5 px-5 md:mx-0 md:px-0 scrollbar-hide">
+        <div className="flex gap-2 overflow-x-auto pt-1 pb-3 mb-6 -mx-5 px-5 md:mx-0 md:px-0 scrollbar-hide">
           {["All", ...cats.map(c => c.label)].map(label => (
             <button
               key={label}
@@ -95,7 +95,7 @@ export default function Shop({
             >
               {label}
               {label !== "All" && (
-                <span className={`ml-1.5 text-[10px] ${activeCategory === label ? "text-white/80" : "text-[hsl(var(--gray))]"}`}>
+                <span className={`ml-1.5 text-[10px] font-extrabold ${activeCategory === label ? "text-white/80" : "text-brand-green"}`}>
                   {cats.find(c => c.label === label)?.count}
                 </span>
               )}

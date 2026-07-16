@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-[hsl(var(--off))]">
+    <section id="contact" className="py-12 md:py-16 bg-[hsl(var(--off))]">
       <div className="container-arp">
         <div className="text-center mb-12">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-brand-green mb-3 cond">
