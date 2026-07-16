@@ -86,6 +86,7 @@ export default function Shop({
                 setActiveCategory(label);
                 setShown(PAGE);
               }}
+              aria-pressed={activeCategory === label}
               className={`shrink-0 px-4 py-2 rounded-full text-xs cond font-bold uppercase tracking-wider transition-all ${
                 activeCategory === label
                   ? "bg-brand-green text-white"

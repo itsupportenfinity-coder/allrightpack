@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Minus, Plus, X } from "lucide-react";
 import { deriveSpecs, getDescription, getRelated, type Product } from "@/lib/products";
 import { useEnquiry } from "@/lib/enquiry";
@@ -16,6 +16,9 @@ export default function ProductModal({
 }) {
   const [qty, setQty] = useState(1);
   const add = useEnquiry(s => s.add);
+  const modalRef = useRef<HTMLDivElement>(null);
+  const prevFocusRef = useRef<HTMLElement | null>(null);
+  const titleId = "product-modal-title";
 
   useEffect(() => {
     setQty(1);
@@ -23,16 +26,54 @@ export default function ProductModal({
 
   useEffect(() => {
     if (!product) return;
+
+    prevFocusRef.current = document.activeElement as HTMLElement;
+
     document.body.style.overflow = "hidden";
+
+    const closeBtn = modalRef.current?.querySelector<HTMLButtonElement>('[aria-label="Close"]');
+    closeBtn?.focus();
+
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
     window.addEventListener("keydown", onKey);
+
     return () => {
       document.body.style.overflow = "";
       window.removeEventListener("keydown", onKey);
+      prevFocusRef.current?.focus();
     };
   }, [product, onClose]);
+
+  useEffect(() => {
+    if (!product) return;
+    const modal = modalRef.current;
+    if (!modal) return;
+
+    const handleTab = (e: KeyboardEvent) => {
+      if (e.key !== "Tab") return;
+
+      const focusable = modal.querySelectorAll<HTMLElement>(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      if (focusable.length === 0) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener("keydown", handleTab);
+    return () => document.removeEventListener("keydown", handleTab);
+  }, [product]);
 
   if (!product) return null;
 
@@ -57,11 +98,17 @@ export default function ProductModal({
       <div className="absolute inset-0 bg-black/55 backdrop-blur-sm" onClick={onClose} />
 
       {/* Modal */}
-      <div className="relative bg-white rounded-2xl shadow-elev w-full max-w-5xl max-h-[92vh] overflow-y-auto">
+      <div
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        className="relative bg-white rounded-2xl shadow-elev w-full max-w-5xl max-h-[92vh] overflow-y-auto"
+      >
         {/* Close */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 z-10 w-9 h-9 rounded-md bg-brand-green-pale text-brand-green hover:bg-brand-green hover:text-white transition-colors flex items-center justify-center"
+          className="absolute top-3 right-3 z-10 w-11 h-11 rounded-md bg-brand-green-pale text-brand-green hover:bg-brand-green hover:text-white transition-colors flex items-center justify-center"
           aria-label="Close"
         >
           <X className="w-4 h-4" />
@@ -81,7 +128,7 @@ export default function ProductModal({
 
           {/* Info */}
           <div className="p-5 md:p-8">
-            <h3 className="display text-3xl md:text-4xl mt-3 leading-tight">{product.name}</h3>
+            <h3 id={titleId} className="display text-3xl md:text-4xl mt-3 leading-tight">{product.name}</h3>
 
             {/* Tags */}
             <div className="mt-3 flex flex-wrap gap-2">
@@ -127,7 +174,7 @@ export default function ProductModal({
                 <button
                   onClick={() => setQty(q => Math.max(1, q - 1))}
                   disabled={qty <= 1}
-                  className={`w-9 h-9 flex items-center justify-center ${
+                  className={`w-11 h-11 flex items-center justify-center ${
                     qty <= 1
                       ? "text-[hsl(var(--gray-light))] cursor-not-allowed"
                       : "text-[hsl(var(--gray-dark))] hover:bg-brand-green-pale"
@@ -143,11 +190,11 @@ export default function ProductModal({
                   aria-label="Quantity"
                   value={qty}
                   onChange={e => setQty(Math.max(1, parseInt(e.target.value || "1", 10)))}
-                  className="w-12 h-9 text-center text-sm font-bold border-x border-input focus:outline-none"
+                  className="w-12 h-11 text-center text-sm font-bold border-x border-input focus:outline-none"
                 />
                 <button
                   onClick={() => setQty(q => q + 1)}
-                  className="w-9 h-9 flex items-center justify-center text-[hsl(var(--gray-dark))] hover:bg-brand-green-pale"
+                  className="w-11 h-11 flex items-center justify-center text-[hsl(var(--gray-dark))] hover:bg-brand-green-pale"
                   aria-label="Increase quantity"
                 >
                   <Plus className="w-3.5 h-3.5" />
@@ -186,6 +233,7 @@ export default function ProductModal({
                 <button
                   key={r.id}
                   onClick={() => onOpenProduct(r)}
+                  aria-label={`View ${r.name}`}
                   className="group text-left bg-white rounded-lg ring-1 ring-brand-green-border overflow-hidden hover:shadow-soft transition-shadow"
                 >
                   <div className="aspect-square bg-[hsl(var(--off))] p-3 overflow-hidden">
