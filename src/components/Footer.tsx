@@ -1,4 +1,4 @@
-import { Instagram, MessageCircle } from "lucide-react";
+import { Instagram, MessageCircle, Phone } from "lucide-react";
 import { scrollToId } from "@/lib/utils";
 
 export default function Footer({ onCategoryFilter }: { onCategoryFilter: (label: string) => void }) {
@@ -42,6 +42,14 @@ export default function Footer({ onCategoryFilter }: { onCategoryFilter: (label:
                 aria-label="WhatsApp"
               >
                 <MessageCircle className="w-4 h-4" />
+              </a>
+            </div>
+            <div className="mt-4">
+              <a
+                href="tel:+96560005276"
+                className="inline-flex items-center gap-2 text-sm text-white/65 hover:text-white transition-colors"
+              >
+                <Phone className="w-4 h-4" /> +965 6000 5276
               </a>
             </div>
           </div>

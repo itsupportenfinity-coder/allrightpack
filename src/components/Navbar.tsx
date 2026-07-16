@@ -101,7 +101,7 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
             className="hidden md:inline-flex items-center gap-2 text-sm font-bold text-brand-green hover:underline"
           >
             <Phone className="w-4 h-4" />
-            +965 60005276
+            +965 6000 5276
           </a>
           <button
             onClick={onOpenCart}
@@ -154,7 +154,7 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
               href="tel:+96560005276"
               className="px-3 py-3 text-sm font-bold text-brand-green flex items-center gap-2"
             >
-              <Phone className="w-4 h-4" /> +965 60005276
+              <Phone className="w-4 h-4" /> +965 6000 5276
             </a>
           </nav>
         </div>
