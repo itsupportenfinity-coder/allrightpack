@@ -13,5 +13,5 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://allrightpack.lovable.app/sitemap.xml
+Sitemap: https://allrightpack.com/sitemap.xml
 
