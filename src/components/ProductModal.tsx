@@ -17,6 +17,7 @@ export default function ProductModal({
   const [qty, setQty] = useState(1);
   const add = useEnquiry(s => s.add);
   const modalRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
   const prevFocusRef = useRef<HTMLElement | null>(null);
   const titleId = "product-modal-title";
 
@@ -83,9 +84,70 @@ export default function ProductModal({
 
   const handleAdd = () => {
     add(product, qty);
-    toast.success(`${product.name} added to enquiry cart`, {
-      description: `Quantity: ${qty}`,
-    });
+
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && imageRef.current) {
+      const imgEl = imageRef.current;
+      const cartBtn = document.querySelector<HTMLElement>('[aria-label="Open enquiry cart"]');
+      if (imgEl && cartBtn) {
+        const s = imgEl.getBoundingClientRect();
+        const t = cartBtn.getBoundingClientRect();
+
+        const clone = document.createElement('img');
+        clone.src = product.image;
+        clone.alt = '';
+        clone.style.cssText = [
+          'position:fixed;z-index:9999;pointer-events:none',
+          `width:${s.width}px;height:${s.height}px;top:${s.top}px;left:${s.left}px`,
+          'border-radius:0.75rem;object-fit:contain;background:white',
+          'box-shadow:0 4px 20px rgba(0,0,0,0.15)',
+        ].join(';');
+        document.body.appendChild(clone);
+
+        const endW = 44, endH = 44;
+        const endX = t.left + t.width / 2 - endW / 2;
+        const endY = t.top + t.height / 2 - endH / 2;
+        const dx = endX - s.left;
+        const dy = endY - s.top;
+        const finalScale = 0.19;
+
+        const fly = clone.animate([
+          { transform: 'translate(0,0) scale(1)', opacity: 1, offset: 0 },
+          { transform: `translate(${dx}px,${dy}px) scale(${finalScale})`, opacity: 1, offset: 0.8 },
+          { transform: `translate(${dx}px,${dy}px) scale(${finalScale})`, opacity: 0, offset: 1 },
+        ], { duration: 650, easing: 'cubic-bezier(0.25,0.1,0.25,1)', fill: 'forwards' });
+
+        fly.finished.then(() => {
+          clone.remove();
+          const bounce = cartBtn.animate([
+            { transform: 'scale(1)' }, { transform: 'scale(1.3)' },
+            { transform: 'scale(1)' }, { transform: 'scale(1.15)' },
+            { transform: 'scale(1)' },
+          ], { duration: 400, easing: 'ease-out' });
+          bounce.finished.then(() => {
+            cartBtn.animate([
+              { boxShadow: '0 0 0 0 rgba(46,125,50,0)' },
+              { boxShadow: '0 0 0 4px rgba(46,125,50,0.3), 0 0 12px 2px rgba(46,125,50,0.15)' },
+              { boxShadow: '0 0 0 0 rgba(46,125,50,0)' },
+            ], { duration: 200, easing: 'ease-out' });
+          });
+        });
+      }
+    }
+
+    toast(
+      <div className="flex items-start gap-3">
+        <img
+          src={product.image}
+          alt=""
+          className="w-12 h-12 rounded-lg object-contain bg-white ring-1 ring-brand-green-border p-1 shrink-0"
+        />
+        <div className="min-w-0">
+          <div className="text-sm font-semibold leading-tight line-clamp-2">{product.name}</div>
+          <p className="text-xs text-muted-foreground mt-0.5">Added to enquiry cart</p>
+          <p className="text-xs text-muted-foreground">Quantity: {qty}</p>
+        </div>
+      </div>,
+    );
   };
 
   const waMsg = encodeURIComponent(
@@ -119,6 +181,7 @@ export default function ProductModal({
           {/* Image */}
           <div className="aspect-square md:aspect-auto bg-[hsl(var(--off))] flex items-center justify-center p-6 md:p-10">
             <img
+              ref={imageRef}
               src={product.image}
               alt={product.name}
               className="max-w-full max-h-[420px] w-auto h-auto object-contain"
