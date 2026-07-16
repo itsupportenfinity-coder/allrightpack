@@ -162,14 +162,14 @@ export function getDescription(p: Product): string {
 /* ------------------------------------------------------------------ */
 
 const CAT_BANNERS: Record<string, string> = {
-  "POF Shrink Film": "/images/banners/hero-1.png",
-  "Packing Tapes": "/images/banners/tapes.png",
-  "Stretch Film": "/images/banners/hero-2.png",
-  "Industrial Strapping": "/images/banners/strapping.png",
-  "Thermal Paper Roll": "/images/banners/thermal.png",
-  "Thermal Labels": "/images/banners/labels.png",
-  "Packaging Machines": "/images/banners/machines.png",
-  "Cling Film": "/images/banners/hero-3.png",
+  "POF Shrink Film": "/images/banners/hero-1.webp",
+  "Packing Tapes": "/images/banners/tapes.webp",
+  "Stretch Film": "/images/banners/hero-2.webp",
+  "Industrial Strapping": "/images/banners/strapping.webp",
+  "Thermal Paper Roll": "/images/banners/thermal.webp",
+  "Thermal Labels": "/images/banners/labels.webp",
+  "Packaging Machines": "/images/banners/machines.webp",
+  "Cling Film": "/images/banners/hero-3.webp",
 };
 
 const CAT_BLURB: Record<string, string> = {

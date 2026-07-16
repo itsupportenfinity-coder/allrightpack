@@ -133,9 +133,9 @@
     "description": "",
     "price": "100.000",
     "currency": null,
-    "image": "/images/products/dotted-gloves.png",
+    "image": "/images/products/dotted-gloves.webp",
     "images": [
-      "/images/products/dotted-gloves.png"
+      "/images/products/dotted-gloves.webp"
     ],
     "tags": []
   },
@@ -791,9 +791,9 @@
     "description": "",
     "price": "100.000",
     "currency": null,
-    "image": "/images/products/double-chamber-vaccum-sealer-machine.png",
+    "image": "/images/products/double-chamber-vaccum-sealer-machine.webp",
     "images": [
-      "/images/products/double-chamber-vaccum-sealer-machine.png"
+      "/images/products/double-chamber-vaccum-sealer-machine.webp"
     ],
     "tags": []
   },
@@ -1057,9 +1057,9 @@
     "description": "",
     "price": "100.000",
     "currency": null,
-    "image": "/images/products/brown-packing-tape-70-yard.png",
+    "image": "/images/products/brown-packing-tape-70-yard.webp",
     "images": [
-      "/images/products/brown-packing-tape-70-yard.png"
+      "/images/products/brown-packing-tape-70-yard.webp"
     ],
     "tags": []
   },

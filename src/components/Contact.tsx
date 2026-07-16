@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -40,32 +40,43 @@ export default function Contact() {
             />
           </div>
 
-          <div className="bg-brand-green text-white rounded-2xl p-8 md:p-10 flex flex-col justify-center shadow-elev">
-            <h3 className="display text-3xl md:text-4xl leading-tight">
-              Need a quote<br />for your business?
-            </h3>
-            <p className="mt-4 text-white/90 text-sm leading-relaxed">
-              Whether you're a small shop or a large industrial operation, we'll get you the right packaging solution at the right price — fast.
-            </p>
-            <span className="block mt-4 text-xs text-white/70">
-              Our team is available on WhatsApp<br />
-              Sat–Thu &bull; 8 AM – 6 PM
-            </span>
-            <div className="mt-4 flex flex-col sm:flex-row gap-3">
-              <a
-                href="https://wa.me/96560005276?text=Hi%20All%20Right%20Pack%21%20I%27d%20like%20to%20enquire"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 cond font-bold uppercase tracking-wider text-sm bg-white text-brand-green px-6 py-3 rounded-md hover:bg-brand-green-pale transition-colors"
-              >
-                <MessageCircle className="w-4 h-4" /> WhatsApp Us
-              </a>
-              <a
-                href="tel:+96560005276"
-                className="inline-flex items-center justify-center gap-2 cond font-bold uppercase tracking-wider text-sm bg-brand-green-dark text-white px-6 py-3 rounded-md hover:brightness-110 transition"
-              >
-                <Phone className="w-4 h-4" /> Call Now
-              </a>
+          <div className="relative rounded-2xl overflow-hidden shadow-elev ring-1 ring-brand-green-border h-[360px] md:h-full hover:shadow-soft transition-shadow"
+               role="region" aria-label="Store location map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.00!2d48.0687138!3d29.3389148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9d998196727d%3A0x54079ba58b3cf6f4!2sAll+Right+Pack!5e0!3m2!1sen!2skw"
+              width="100%"
+              height="100%"
+              loading="lazy"
+              title="All Right Pack store location on Google Maps"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 w-full h-full"
+              style={{ border: 0 }}
+            />
+            <div className="absolute bottom-0 left-0 m-3 md:m-4 max-w-[260px] md:max-w-[280px] bg-white rounded-xl shadow-elev ring-1 ring-brand-green-border p-4">
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-5 h-5 text-brand-green shrink-0 mt-0.5" />
+                <div>
+                  <div className="display text-lg md:text-xl text-foreground leading-none">
+                    All Right Pack
+                  </div>
+                  <div className="mt-2 text-[13px] leading-snug text-[hsl(var(--gray-dark))]">
+                    203, Suhaib Complex<br />
+                    Office 14<br />
+                    Salmiya, Kuwait
+                  </div>
+                  <a
+                    href="https://maps.app.goo.gl/htobcgNL33Xa3U1W8"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open All Right Pack location in Google Maps"
+                    className="mt-3 inline-flex items-center gap-1.5 cond font-bold uppercase tracking-wider text-xs bg-brand-green text-white px-3.5 py-2 rounded-md hover:bg-brand-green-mid transition-colors"
+                  >
+                    <MapPin className="w-3.5 h-3.5" />
+                    Open in Google Maps
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

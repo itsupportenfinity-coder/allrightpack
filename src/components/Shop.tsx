@@ -43,7 +43,7 @@ export default function Shop({
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
           <div>
             <div className="text-xs font-bold uppercase tracking-[0.2em] text-brand-green mb-3 cond">
-              — Top Picks
+              — All Products
             </div>
             <h2 className="display text-4xl md:text-5xl lg:text-6xl">
               Featured <span className="text-brand-green">Products</span>

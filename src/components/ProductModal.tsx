@@ -81,9 +81,6 @@ export default function ProductModal({
 
           {/* Info */}
           <div className="p-5 md:p-8">
-            <span className="inline-block text-[10px] cond font-bold uppercase tracking-wider text-white bg-brand-green px-2.5 py-1 rounded">
-              POPULAR
-            </span>
             <h3 className="display text-3xl md:text-4xl mt-3 leading-tight">{product.name}</h3>
 
             {/* Tags */}

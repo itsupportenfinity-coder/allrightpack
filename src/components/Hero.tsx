@@ -4,13 +4,13 @@ import { scrollToId } from "@/lib/utils";
 import { handleImgError } from "@/lib/image";
 
 const SLIDES = [
-  { src: "/images/banners/hero-1.png", badge: "POF Shrink Film" },
-  { src: "/images/banners/tapes.png", badge: "Packing Tapes" },
-  { src: "/images/banners/hero-2.png", badge: "Stretch Film" },
-  { src: "/images/banners/strapping.png", badge: "Industrial Strapping" },
-  { src: "/images/banners/labels.png", badge: "Thermal Labels" },
-  { src: "/images/banners/machines.png", badge: "Packaging Machines" },
-  { src: "/images/banners/hero-3.png", badge: "All Right Pack" },
+  { src: "/images/banners/hero-1.webp", badge: "POF Shrink Film" },
+  { src: "/images/banners/tapes.webp", badge: "Packing Tapes" },
+  { src: "/images/banners/hero-2.webp", badge: "Stretch Film" },
+  { src: "/images/banners/strapping.webp", badge: "Industrial Strapping" },
+  { src: "/images/banners/labels.webp", badge: "Thermal Labels" },
+  { src: "/images/banners/machines.webp", badge: "Packaging Machines" },
+  { src: "/images/banners/hero-3.webp", badge: "All Right Pack" },
 ];
 
 export default function Hero() {
@@ -102,7 +102,7 @@ export default function Hero() {
               width={1200}
               height={960}
               loading={i === 0 ? "eager" : "lazy"}
-              fetchPriority={i === 0 ? "high" : "auto"}
+              {...{ fetchpriority: i === 0 ? "high" : "auto" }}
               decoding="async"
               className={`absolute inset-0 w-full h-full object-cover crisp-img transition-opacity duration-700 ${
                 i === idx ? "opacity-100" : "opacity-0"
