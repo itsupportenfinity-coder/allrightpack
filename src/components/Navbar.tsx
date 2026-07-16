@@ -10,12 +10,12 @@ const NAV = [
   { id: "contact", label: "Contact" },
 ];
 
-const NAV_OFFSET = 96; // sticky nav height + announcement bar
-
 function scrollToId(id: string) {
   const el = document.getElementById(id);
   if (!el) return;
-  const top = el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+  const header = document.querySelector("header");
+  const offset = header?.offsetHeight ?? 68;
+  const top = el.getBoundingClientRect().top + window.scrollY - offset;
   window.scrollTo({ top, behavior: "smooth" });
 }
 
@@ -32,21 +32,24 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Scroll-spy with IntersectionObserver — fixes "always Shop" bug.
+  function getOffset() {
+    const header = document.querySelector("header");
+    return header?.offsetHeight ?? 68;
+  }
+
   useEffect(() => {
     const sections = NAV.map(n => document.getElementById(n.id)).filter(Boolean) as HTMLElement[];
     if (!sections.length) return;
+    const offset = getOffset();
     const observer = new IntersectionObserver(
       entries => {
-        // Pick the entry with the largest visible ratio that crosses the trigger line.
         const visible = entries
           .filter(e => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+          .sort((a, b) => b.intersectionRect.height - a.intersectionRect.height);
         if (visible[0]) setActive(visible[0].target.id);
       },
       {
-        // Trigger when section center crosses ~30% from top of viewport.
-        rootMargin: `-${NAV_OFFSET + 20}px 0px -55% 0px`,
+        rootMargin: `-${offset + 20}px 0px -55% 0px`,
         threshold: [0, 0.1, 0.25, 0.5, 0.75, 1],
       }
     );
