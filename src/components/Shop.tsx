@@ -103,7 +103,26 @@ export default function Shop({
         </div>
 
         {visible.length === 0 ? (
-          <div className="py-20 text-center text-[hsl(var(--gray))]">No products match your search.</div>
+          <div className="py-16 md:py-20 text-center">
+            <h3 className="display text-2xl text-foreground">No products found</h3>
+            <p className="mt-2 text-sm text-[hsl(var(--gray-dark))] max-w-sm mx-auto leading-relaxed">
+              We couldn't find any products matching your search or selected category.
+            </p>
+            <ul className="mt-4 text-xs text-[hsl(var(--gray))] space-y-1">
+              <li>• Check the spelling</li>
+              <li>• Try fewer keywords</li>
+              <li>• Choose a different category</li>
+            </ul>
+            <button
+              onClick={() => {
+                setQuery("");
+                if (activeCategory !== "All") setActiveCategory("All");
+              }}
+              className="mt-6 btn-green"
+            >
+              Clear Search
+            </button>
+          </div>
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
             {visible.map(p => (
