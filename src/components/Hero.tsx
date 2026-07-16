@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { scrollToId } from "@/lib/utils";
+import { handleImgError } from "@/lib/image";
 
 const SLIDES = [
   { src: "/images/banners/hero-1.png", badge: "POF Shrink Film" },
@@ -106,6 +107,7 @@ export default function Hero() {
               className={`absolute inset-0 w-full h-full object-cover crisp-img transition-opacity duration-700 ${
                 i === idx ? "opacity-100" : "opacity-0"
               }`}
+              onError={handleImgError}
             />
           ))}
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-5 flex items-end justify-between">

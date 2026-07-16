@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Minus, Plus, ShoppingCart, Trash2, X } from "lucide-react";
 import { useEnquiry } from "@/lib/enquiry";
+import { handleImgError } from "@/lib/image";
 
 export default function CartDrawer({ open, onClose }: { open: boolean; onClose: () => void }) {
   const { items, setQty, remove, clear } = useEnquiry();
@@ -54,6 +55,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                     src={product.image}
                     alt={product.name}
                     className="w-16 h-16 object-contain bg-[hsl(var(--off))] rounded shrink-0"
+                    onError={handleImgError}
                   />
                   <div className="flex-1 min-w-0">
                     <div className="text-sm font-bold leading-tight line-clamp-2">

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { allProducts, getCategories, type Product } from "@/lib/products";
 import { Search } from "lucide-react";
+import { handleImgError } from "@/lib/image";
 
 const PAGE = 12;
 
@@ -123,6 +124,7 @@ function ProductCard({ product, onClick }: { product: Product; onClick: () => vo
           alt={product.name}
           loading="lazy"
           className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+          onError={handleImgError}
         />
       </div>
       <div className="p-3 md:p-4 border-t border-brand-green-border">

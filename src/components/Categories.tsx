@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { getCategories } from "@/lib/products";
 import { scrollToId } from "@/lib/utils";
+import { handleImgError } from "@/lib/image";
 
 export default function Categories({ onPick }: { onPick: (label: string) => void }) {
   const cats = getCategories();
@@ -35,6 +36,7 @@ export default function Categories({ onPick }: { onPick: (label: string) => void
                   alt={c.label}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  onError={handleImgError}
                 />
               </div>
               <div className="p-3 md:p-4">

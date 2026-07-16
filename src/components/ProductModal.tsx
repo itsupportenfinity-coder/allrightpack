@@ -3,6 +3,7 @@ import { Minus, Plus, X } from "lucide-react";
 import { deriveSpecs, getDescription, getRelated, type Product } from "@/lib/products";
 import { useEnquiry } from "@/lib/enquiry";
 import { toast } from "sonner";
+import { handleImgError } from "@/lib/image";
 
 export default function ProductModal({
   product,
@@ -74,6 +75,7 @@ export default function ProductModal({
               src={product.image}
               alt={product.name}
               className="max-w-full max-h-[420px] w-auto h-auto object-contain"
+              onError={handleImgError}
             />
           </div>
 
@@ -190,6 +192,7 @@ export default function ProductModal({
                       alt={r.name}
                       loading="lazy"
                       className="w-full h-full object-contain group-hover:scale-105 transition-transform"
+                      onError={handleImgError}
                     />
                   </div>
                   <div className="p-2.5 border-t border-brand-green-border">
