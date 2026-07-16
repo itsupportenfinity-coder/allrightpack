@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { Minus, Plus, ShoppingCart, Trash2, X } from "lucide-react";
 import { useEnquiry } from "@/lib/enquiry";
 import { handleImgError } from "@/lib/image";
@@ -16,6 +16,10 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
   };
 
   const handleCancelClear = () => setConfirmOpen(false);
+
+  const confirmRef = useRef<HTMLDivElement>(null);
+  const prevFocusRef = useRef<HTMLElement | null>(null);
+  const confirmTitleId = useId();
 
   useEffect(() => {
     if (!open) return;
@@ -42,6 +46,48 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
       document.body.style.overflow = "";
     }
     return () => { document.body.style.overflow = ""; };
+  }, [confirmOpen]);
+
+  useEffect(() => {
+    if (!confirmOpen) return;
+
+    prevFocusRef.current = document.activeElement as HTMLElement;
+
+    const cancelBtn = confirmRef.current?.querySelector<HTMLButtonElement>('button:first-of-type');
+    cancelBtn?.focus();
+
+    return () => {
+      prevFocusRef.current?.focus();
+    };
+  }, [confirmOpen]);
+
+  useEffect(() => {
+    if (!confirmOpen) return;
+    const modal = confirmRef.current;
+    if (!modal) return;
+
+    const handleTab = (e: KeyboardEvent) => {
+      if (e.key !== "Tab") return;
+
+      const focusable = modal.querySelectorAll<HTMLElement>(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      if (focusable.length === 0) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener("keydown", handleTab);
+    return () => document.removeEventListener("keydown", handleTab);
   }, [confirmOpen]);
 
   if (!open) return null;
@@ -150,6 +196,10 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
 
       {/* Confirm clear modal */}
       <div
+        ref={confirmRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={confirmTitleId}
         className={`fixed inset-0 z-[120] flex items-center justify-center p-4 transition-all duration-200 ${
           confirmOpen
             ? "opacity-100 visible scale-100"
@@ -164,7 +214,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
         >
           <div className="flex items-center gap-3">
             <Trash2 className="w-6 h-6 text-destructive shrink-0" />
-            <h3 className="display text-xl text-foreground">Clear Enquiry Cart</h3>
+            <h3 id={confirmTitleId} className="display text-xl text-foreground">Clear Enquiry Cart</h3>
           </div>
           <p className="mt-3 text-sm text-[hsl(var(--gray-dark))] leading-relaxed">
             Are you sure you want to remove all products from your enquiry cart? This action cannot be undone.
