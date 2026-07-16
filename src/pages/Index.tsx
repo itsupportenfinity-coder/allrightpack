@@ -18,10 +18,11 @@ export default function Index() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <a href="#products" className="skip-link">Skip to content</a>
       <AnnouncementBar />
       <Navbar onOpenCart={() => setCartOpen(true)} />
 
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         <Hero />
         <Categories onPick={setActiveCategory} />
         <Shop
@@ -47,7 +48,7 @@ export default function Index() {
         href="https://wa.me/96560005276?text=Hi%20All%20Right%20Pack!"
         target="_blank"
         rel="noreferrer"
-        className="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-brand-whatsapp text-white shadow-elev flex items-center justify-center hover:scale-110 transition-transform"
+        className="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-brand-whatsapp text-white shadow-elev flex items-center justify-center hover:scale-110 transition-transform focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
         aria-label="Chat on WhatsApp"
       >
         <svg viewBox="0 0 24 24" className="w-7 h-7 fill-current">

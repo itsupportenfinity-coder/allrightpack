@@ -111,8 +111,8 @@ export default function Footer({ onCategoryFilter }: { onCategoryFilter: (label:
         <div className="border-t border-white/10 pt-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/50">
           <div>© {new Date().getFullYear()} All Right Pack, Kuwait. All rights reserved.</div>
           <div className="flex gap-2">
-            {["KNET", "VISA", "MC", "CASH"].map(p => (
-              <span key={p} className="px-2 py-1 bg-white/5 rounded text-[10px] cond font-bold tracking-wider">
+            {["Trusted Packaging Supplier", "Industrial Packaging Solutions", "Serving Businesses Across Kuwait"].map(p => (
+              <span key={p} className="px-2 py-1 bg-white/5 rounded text-[10px] cond font-bold tracking-wider text-brand-green">
                 {p}
               </span>
             ))}

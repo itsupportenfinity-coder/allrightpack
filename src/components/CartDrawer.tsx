@@ -59,7 +59,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
           <h3 className="display text-2xl">Enquiry Cart</h3>
           <button
             onClick={onClose}
-            className="w-9 h-9 rounded-md bg-brand-green-pale text-brand-green hover:bg-brand-green hover:text-white transition-colors flex items-center justify-center"
+            className="w-9 h-9 rounded-md bg-brand-green-pale text-brand-green hover:bg-brand-green hover:text-white transition-colors flex items-center justify-center focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
             aria-label="Close cart"
           >
             <X className="w-4 h-4" />
@@ -98,7 +98,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                         <button
                           onClick={() => setQty(product.id, qty - 1)}
                           disabled={qty <= 1}
-                          className={`w-7 h-7 flex items-center justify-center ${
+                          className={`w-7 h-7 flex items-center justify-center focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
                             qty <= 1
                               ? "text-[hsl(var(--gray-light))] cursor-not-allowed"
                               : "hover:bg-brand-green-pale"
@@ -110,7 +110,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                         <span className="w-8 text-center text-sm font-bold">{qty}</span>
                         <button
                           onClick={() => setQty(product.id, qty + 1)}
-                          className="w-7 h-7 flex items-center justify-center hover:bg-brand-green-pale"
+                          className="w-7 h-7 flex items-center justify-center hover:bg-brand-green-pale focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
                           aria-label="Increase"
                         >
                           <Plus className="w-3 h-3" />
@@ -118,7 +118,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                       </div>
                       <button
                         onClick={() => remove(product.id)}
-                        className="text-[hsl(var(--gray))] hover:text-destructive p-1"
+                        className="text-[hsl(var(--gray))] hover:text-destructive p-1 focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
                         aria-label="Remove"
                       >
                         <Trash2 className="w-4 h-4" />
@@ -141,7 +141,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
             >
               Send Enquiry via WhatsApp
             </a>
-            <button onClick={handleClear} className="text-xs text-[hsl(var(--gray))] hover:text-destructive w-full text-center py-1">
+            <button onClick={handleClear} className="text-xs text-[hsl(var(--gray))] hover:text-destructive w-full text-center py-1 focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2">
               Clear cart
             </button>
           </footer>
@@ -172,13 +172,13 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
           <div className="mt-6 flex items-center gap-3">
             <button
               onClick={handleCancelClear}
-              className="flex-1 cond font-bold uppercase tracking-wider text-sm bg-white text-brand-green border-2 border-brand-green-border rounded-md px-4 py-2.5 hover:border-brand-green hover:bg-brand-green-pale transition-colors"
+              className="flex-1 cond font-bold uppercase tracking-wider text-sm bg-white text-brand-green border-2 border-brand-green-border rounded-md px-4 py-2.5 hover:border-brand-green hover:bg-brand-green-pale transition-colors focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
             >
               Cancel
             </button>
             <button
               onClick={handleConfirmClear}
-              className="flex-1 cond font-bold uppercase tracking-wider text-sm bg-destructive text-destructive-foreground rounded-md px-4 py-2.5 hover:bg-destructive/90 transition-colors"
+              className="flex-1 cond font-bold uppercase tracking-wider text-sm bg-destructive text-destructive-foreground rounded-md px-4 py-2.5 hover:bg-destructive/90 transition-colors focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
             >
               Clear Cart
             </button>

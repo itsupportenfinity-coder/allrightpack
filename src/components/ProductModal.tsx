@@ -108,7 +108,7 @@ export default function ProductModal({
         {/* Close */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 z-10 w-11 h-11 rounded-md bg-brand-green-pale text-brand-green hover:bg-brand-green hover:text-white transition-colors flex items-center justify-center"
+          className="absolute top-3 right-3 z-10 w-11 h-11 rounded-md bg-brand-green-pale text-brand-green hover:bg-brand-green hover:text-white transition-colors flex items-center justify-center focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
           aria-label="Close"
         >
           <X className="w-4 h-4" />
@@ -174,7 +174,7 @@ export default function ProductModal({
                 <button
                   onClick={() => setQty(q => Math.max(1, q - 1))}
                   disabled={qty <= 1}
-                  className={`w-11 h-11 flex items-center justify-center ${
+                  className={`w-11 h-11 flex items-center justify-center focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
                     qty <= 1
                       ? "text-[hsl(var(--gray-light))] cursor-not-allowed"
                       : "text-[hsl(var(--gray-dark))] hover:bg-brand-green-pale"
@@ -190,11 +190,11 @@ export default function ProductModal({
                   aria-label="Quantity"
                   value={qty}
                   onChange={e => setQty(Math.max(1, parseInt(e.target.value || "1", 10)))}
-                  className="w-12 h-11 text-center text-sm font-bold border-x border-input focus:outline-none"
+                  className="w-12 h-11 text-center text-sm font-bold border-x border-input focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
                 />
                 <button
                   onClick={() => setQty(q => q + 1)}
-                  className="w-11 h-11 flex items-center justify-center text-[hsl(var(--gray-dark))] hover:bg-brand-green-pale"
+                  className="w-11 h-11 flex items-center justify-center text-[hsl(var(--gray-dark))] hover:bg-brand-green-pale focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
                   aria-label="Increase quantity"
                 >
                   <Plus className="w-3.5 h-3.5" />

@@ -82,7 +82,8 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
             <button
               key={n.id}
               onClick={() => handleNav(n.id)}
-              className={`px-3.5 py-2 rounded-md text-[13.5px] font-bold uppercase tracking-wide transition-colors ${
+              aria-current={active === n.id ? "page" : undefined}
+              className={`px-3.5 py-2 rounded-md text-[13.5px] font-bold uppercase tracking-wide transition-colors focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
                 active === n.id
                   ? "text-brand-green bg-brand-green-pale"
                   : "text-[hsl(var(--gray-dark))] hover:text-brand-green hover:bg-brand-green-pale"
@@ -104,7 +105,7 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
           </a>
           <button
             onClick={onOpenCart}
-            className="relative w-10 h-10 rounded-md border-2 border-brand-green-border text-brand-green hover:bg-brand-green-pale transition-colors flex items-center justify-center"
+            className="relative w-10 h-10 rounded-md border-2 border-brand-green-border text-brand-green hover:bg-brand-green-pale transition-colors flex items-center justify-center focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
             aria-label="Open enquiry cart"
           >
             <ShoppingCart className="w-4 h-4" />
@@ -123,7 +124,7 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
             WhatsApp Us
           </a>
           <button
-            className="lg:hidden w-10 h-10 rounded-md border-2 border-brand-green-border text-brand-green flex items-center justify-center"
+            className="lg:hidden w-10 h-10 rounded-md border-2 border-brand-green-border text-brand-green flex items-center justify-center focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
             onClick={() => setMobileOpen(v => !v)}
             aria-label="Toggle menu"
           >
@@ -140,7 +141,8 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
               <button
                 key={n.id}
                 onClick={() => handleNav(n.id)}
-                className={`text-left px-3 py-3 rounded-md text-sm font-bold uppercase tracking-wide ${
+                aria-current={active === n.id ? "page" : undefined}
+                className={`text-left px-3 py-3 rounded-md text-sm font-bold uppercase tracking-wide focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
                   active === n.id
                     ? "text-brand-green bg-brand-green-pale"
                     : "text-[hsl(var(--gray-dark))] hover:bg-brand-green-pale"

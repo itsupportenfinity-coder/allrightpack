@@ -117,14 +117,14 @@ export default function Hero() {
             <div className="flex gap-2">
               <button
                 onClick={() => goTo((idx - 1 + SLIDES.length) % SLIDES.length)}
-                className="w-11 h-11 md:w-10 md:h-10 rounded-full bg-white/95 text-brand-green flex items-center justify-center hover:bg-white shrink-0"
+                className="w-11 h-11 md:w-10 md:h-10 rounded-full bg-white/95 text-brand-green flex items-center justify-center hover:bg-white shrink-0 focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
                 aria-label="Previous"
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
               <button
                 onClick={() => goTo((idx + 1) % SLIDES.length)}
-                className="w-11 h-11 md:w-10 md:h-10 rounded-full bg-white/95 text-brand-green flex items-center justify-center hover:bg-white shrink-0"
+                className="w-11 h-11 md:w-10 md:h-10 rounded-full bg-white/95 text-brand-green flex items-center justify-center hover:bg-white shrink-0 focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
                 aria-label="Next"
               >
                 <ChevronRight className="w-4 h-4" />
@@ -137,7 +137,7 @@ export default function Hero() {
               <button
                 key={i}
                 onClick={() => goTo(i)}
-                className="flex items-center justify-center w-7 h-7"
+                className="flex items-center justify-center w-7 h-7 focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
                 aria-label={`Slide ${i + 1}`}
               >
                 <span

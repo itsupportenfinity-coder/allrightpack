@@ -86,7 +86,8 @@
   .btn-base {
     @apply inline-flex items-center justify-center gap-2 rounded-[var(--radius)]
       px-6 py-3 cond text-sm font-bold uppercase tracking-wider
-      transition-all duration-200 cursor-pointer select-none;
+      transition-all duration-200 cursor-pointer select-none
+      focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2;
   }
   .btn-green {
     @apply btn-base bg-[hsl(var(--green))] text-white
@@ -120,11 +121,48 @@
   }
 
   .card-hover {
-    @apply transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-lg)];
+    @apply transition-all duration-200 hover:-translate-y-1 hover:shadow-[var(--shadow-lg)]
+      focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2;
   }
 
   /* Slider crisp rendering for upscaled banners */
   .crisp-img {
     image-rendering: -webkit-optimize-contrast;
+  }
+
+  .skip-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .skip-link:focus-visible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding: 12px 20px;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: nowrap;
+    z-index: 9999;
+    background: hsl(var(--green));
+    color: white;
+    font-family: var(--font-cond);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 0 0 var(--radius) 0;
+    box-shadow: var(--shadow-lg);
+    outline: none;
+    text-decoration: none;
   }
 }

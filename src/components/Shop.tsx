@@ -72,7 +72,7 @@ export default function Shop({
                 setShown(PAGE);
               }}
               placeholder="Search products..."
-              className="w-full h-11 pl-9 pr-4 rounded-md border-2 border-brand-green-border bg-white text-sm focus:outline-none focus:border-brand-green transition-colors"
+              className="w-full h-11 pl-9 pr-4 rounded-md border-2 border-brand-green-border bg-white text-sm focus:outline-none focus:border-brand-green transition-colors focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
             />
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function Shop({
                 setShown(PAGE);
               }}
               aria-pressed={activeCategory === label}
-              className={`shrink-0 px-4 py-2 rounded-full text-xs cond font-bold uppercase tracking-wider transition-all ${
+              className={`shrink-0 px-4 py-2 rounded-full text-xs cond font-bold uppercase tracking-wider transition-all focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
                 activeCategory === label
                   ? "bg-brand-green text-white"
                   : "bg-white text-[hsl(var(--gray-dark))] ring-1 ring-brand-green-border hover:ring-brand-green hover:text-brand-green"
