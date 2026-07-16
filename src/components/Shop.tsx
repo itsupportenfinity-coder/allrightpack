@@ -25,7 +25,11 @@ export default function Shop({
     }
     if (query.trim()) {
       const q = query.toLowerCase();
-      list = list.filter(p => p.name.toLowerCase().includes(q));
+      list = list.filter(p =>
+        p.name.toLowerCase().includes(q) ||
+        p.categoryLabel.toLowerCase().includes(q) ||
+        p.description.toLowerCase().includes(q)
+      );
     }
     return list;
   }, [activeCategory, query]);
