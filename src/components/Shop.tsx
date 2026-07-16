@@ -44,7 +44,7 @@ export default function Shop({
   return (
     <section id="products" className="py-16 md:py-24 bg-[hsl(var(--off))]">
       <div className="container-arp">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
+        <div className="flex flex-col md:flex-row gap-6 mb-4">
           <div>
             <div className="text-xs font-bold uppercase tracking-[0.2em] text-brand-green mb-3 cond">
               — All Products
@@ -53,7 +53,15 @@ export default function Shop({
               Featured <span className="text-brand-green">Products</span>
             </h2>
           </div>
-          <div className="relative md:w-80">
+        </div>
+
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-6">
+          <div className="text-sm md:text-base font-semibold text-brand-green cond tracking-wide">
+            {activeCategory === "All" && !query.trim()
+              ? `Showing ${allProducts.length} products`
+              : `Showing ${filtered.length} of ${allProducts.length} products`}
+          </div>
+          <div className="relative w-full md:w-80 shrink-0">
             <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[hsl(var(--gray))]" />
             <input
               type="search"
