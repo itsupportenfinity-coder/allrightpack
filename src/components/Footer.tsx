@@ -35,13 +35,13 @@ export default function Footer({ onCategoryFilter }: { onCategoryFilter: (label:
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="https://wa.me/96560005276"
-                target="_blank"
-                rel="noreferrer"
-                className="w-10 h-10 rounded-md bg-white/5 hover:bg-brand-whatsapp flex items-center justify-center transition-colors"
-                aria-label="WhatsApp"
-              >
-                <MessageCircle className="w-4 h-4" />
+              href="https://wa.me/96560005276?text=Hi%20All%20Right%20Pack%21"
+              target="_blank"
+              rel="noreferrer"
+              className="w-10 h-10 rounded-md bg-white/5 hover:bg-brand-whatsapp flex items-center justify-center transition-colors"
+              aria-label="WhatsApp"
+            >
+              <MessageCircle className="w-4 h-4" />
               </a>
             </div>
             <div className="mt-4">
@@ -94,7 +94,7 @@ export default function Footer({ onCategoryFilter }: { onCategoryFilter: (label:
               <li><button onClick={() => scrollToId("contact")} className="text-white/65 hover:text-white transition-colors">Contact Us</button></li>
               <li><button onClick={() => scrollToId("why")} className="text-white/65 hover:text-white transition-colors">Why Choose Us</button></li>
               <li><a href="https://maps.app.goo.gl/htobcgNL33Xa3U1W8" target="_blank" rel="noreferrer" className="text-white/65 hover:text-white transition-colors">Find Our Store</a></li>
-              <li><a href="https://wa.me/96560005276" target="_blank" rel="noreferrer" className="text-white/65 hover:text-white transition-colors">WhatsApp Us</a></li>
+              <li><a href="https://wa.me/96560005276?text=Hi%20All%20Right%20Pack%21" target="_blank" rel="noreferrer" className="text-white/65 hover:text-white transition-colors">WhatsApp Us</a></li>
             </ul>
             <div className="mt-6">
               <div className="text-[11px] cond uppercase tracking-[0.2em] font-bold text-brand-green mb-2">

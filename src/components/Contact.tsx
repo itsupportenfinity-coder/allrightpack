@@ -53,7 +53,7 @@ export default function Contact() {
             </span>
             <div className="mt-4 flex flex-col sm:flex-row gap-3">
               <a
-                href="https://wa.me/96560005276?text=Hi%20All%20Right%20Pack%2C%20I%27d%20like%20a%20quote"
+                href="https://wa.me/96560005276?text=Hi%20All%20Right%20Pack%21%20I%27d%20like%20to%20enquire"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 cond font-bold uppercase tracking-wider text-sm bg-white text-brand-green px-6 py-3 rounded-md hover:bg-brand-green-pale transition-colors"

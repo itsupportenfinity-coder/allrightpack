@@ -24,29 +24,28 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  function getOffset() {
-    const header = document.querySelector("header");
-    return header?.offsetHeight ?? 68;
-  }
-
   useEffect(() => {
-    const sections = NAV.map(n => document.getElementById(n.id)).filter(Boolean) as HTMLElement[];
-    if (!sections.length) return;
-    const offset = getOffset();
-    const observer = new IntersectionObserver(
-      entries => {
-        const visible = entries
-          .filter(e => e.isIntersecting)
-          .sort((a, b) => b.intersectionRect.height - a.intersectionRect.height);
-        if (visible[0]) setActive(visible[0].target.id);
-      },
-      {
-        rootMargin: `-${offset + 20}px 0px -55% 0px`,
-        threshold: [0, 0.1, 0.25, 0.5, 0.75, 1],
+    let current = NAV[0].id;
+
+    const onScroll = () => {
+      const mid = window.innerHeight / 2;
+      for (const { id } of NAV) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const r = el.getBoundingClientRect();
+        if (r.top <= mid && r.bottom >= mid) {
+          if (current !== id) {
+            current = id;
+            setActive(id);
+          }
+          return;
+        }
       }
-    );
-    sections.forEach(s => observer.observe(s));
-    return () => observer.disconnect();
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const handleNav = (id: string) => {
@@ -121,7 +120,7 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
             rel="noreferrer"
             className="hidden sm:inline-flex btn-wa !px-4 !py-2 !text-xs"
           >
-            WhatsApp
+            WhatsApp Us
           </a>
           <button
             className="lg:hidden w-10 h-10 rounded-md border-2 border-brand-green-border text-brand-green flex items-center justify-center"
