@@ -126,7 +126,12 @@ export default function ProductModal({
               <div className="inline-flex items-center border border-input rounded-md">
                 <button
                   onClick={() => setQty(q => Math.max(1, q - 1))}
-                  className="w-9 h-9 flex items-center justify-center text-[hsl(var(--gray-dark))] hover:bg-brand-green-pale"
+                  disabled={qty <= 1}
+                  className={`w-9 h-9 flex items-center justify-center ${
+                    qty <= 1
+                      ? "text-[hsl(var(--gray-light))] cursor-not-allowed"
+                      : "text-[hsl(var(--gray-dark))] hover:bg-brand-green-pale"
+                  }`}
                   aria-label="Decrease quantity"
                 >
                   <Minus className="w-3.5 h-3.5" />

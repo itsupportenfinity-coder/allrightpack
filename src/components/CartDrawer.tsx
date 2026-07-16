@@ -68,7 +68,12 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                       <div className="inline-flex items-center border border-input rounded">
                         <button
                           onClick={() => setQty(product.id, qty - 1)}
-                          className="w-7 h-7 flex items-center justify-center hover:bg-brand-green-pale"
+                          disabled={qty <= 1}
+                          className={`w-7 h-7 flex items-center justify-center ${
+                            qty <= 1
+                              ? "text-[hsl(var(--gray-light))] cursor-not-allowed"
+                              : "hover:bg-brand-green-pale"
+                          }`}
                           aria-label="Decrease"
                         >
                           <Minus className="w-3 h-3" />
