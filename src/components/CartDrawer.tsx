@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Minus, Plus, Trash2, X } from "lucide-react";
+import { Minus, Plus, ShoppingCart, Trash2, X } from "lucide-react";
 import { useEnquiry } from "@/lib/enquiry";
 
 export default function CartDrawer({ open, onClose }: { open: boolean; onClose: () => void }) {
@@ -39,7 +39,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
         <div className="flex-1 overflow-y-auto p-5">
           {items.length === 0 ? (
             <div className="text-center py-16 text-[hsl(var(--gray))]">
-              <div className="text-6xl mb-4">🛒</div>
+              <ShoppingCart className="w-16 h-16 mx-auto text-[hsl(var(--gray))] mb-4" />
               <p className="text-sm">Your enquiry cart is empty.</p>
               <p className="text-xs mt-2">Browse our products and add items to enquire.</p>
             </div>

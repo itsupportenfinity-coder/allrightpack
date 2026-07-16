@@ -64,7 +64,7 @@ export default function Contact() {
                 href="tel:+96560005276"
                 className="inline-flex items-center justify-center gap-2 cond font-bold uppercase tracking-wider text-sm bg-brand-green-dark text-white px-6 py-3 rounded-md hover:brightness-110 transition"
               >
-                📞 Call Now
+                <Phone className="w-4 h-4" /> Call Now
               </a>
             </div>
           </div>

@@ -126,6 +126,5 @@
   /* Slider crisp rendering for upscaled banners */
   .crisp-img {
     image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
   }
 }
