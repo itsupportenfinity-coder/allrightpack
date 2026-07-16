@@ -4,3 +4,12 @@ import { twMerge } from "tailwind-merge";
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
+
+export function scrollToId(id: string) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const header = document.querySelector("header");
+  const offset = header?.offsetHeight ?? 68;
+  const top = el.getBoundingClientRect().top + window.scrollY - offset;
+  window.scrollTo({ top, behavior: "smooth" });
+}

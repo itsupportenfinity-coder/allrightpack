@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { scrollToId } from "@/lib/utils";
 
 const SLIDES = [
   { src: "/images/banners/hero-1.png", badge: "POF Shrink Film" },
@@ -10,14 +11,6 @@ const SLIDES = [
   { src: "/images/banners/machines.png", badge: "Packaging Machines" },
   { src: "/images/banners/hero-3.png", badge: "All Right Pack" },
 ];
-
-const NAV_OFFSET = 96;
-function scrollToId(id: string) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const top = el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
-  window.scrollTo({ top, behavior: "smooth" });
-}
 
 export default function Hero() {
   const [idx, setIdx] = useState(0);

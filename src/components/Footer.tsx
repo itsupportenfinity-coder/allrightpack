@@ -1,12 +1,5 @@
 import { Instagram, MessageCircle } from "lucide-react";
-
-const NAV_OFFSET = 96;
-function scrollToId(id: string) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const top = el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
-  window.scrollTo({ top, behavior: "smooth" });
-}
+import { scrollToId } from "@/lib/utils";
 
 export default function Footer({ onCategoryFilter }: { onCategoryFilter: (label: string) => void }) {
   const goShop = (label: string) => {

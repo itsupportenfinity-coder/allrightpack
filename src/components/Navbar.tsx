@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, Phone, ShoppingCart, X } from "lucide-react";
 import { useEnquiry } from "@/lib/enquiry";
+import { scrollToId } from "@/lib/utils";
 
 const NAV = [
   { id: "home", label: "Home" },
@@ -9,15 +10,6 @@ const NAV = [
   { id: "why", label: "Why Us" },
   { id: "contact", label: "Contact" },
 ];
-
-function scrollToId(id: string) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const header = document.querySelector("header");
-  const offset = header?.offsetHeight ?? 68;
-  const top = el.getBoundingClientRect().top + window.scrollY - offset;
-  window.scrollTo({ top, behavior: "smooth" });
-}
 
 export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
   const [active, setActive] = useState("home");

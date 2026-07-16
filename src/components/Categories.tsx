@@ -1,18 +1,13 @@
 import { ArrowRight } from "lucide-react";
 import { getCategories } from "@/lib/products";
-
-const NAV_OFFSET = 96;
+import { scrollToId } from "@/lib/utils";
 
 export default function Categories({ onPick }: { onPick: (label: string) => void }) {
   const cats = getCategories();
 
   const handlePick = (label: string) => {
     onPick(label);
-    // Scroll to shop section with proper offset (fixes scroll bug)
-    const el = document.getElementById("products");
-    if (!el) return;
-    const top = el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
-    window.scrollTo({ top, behavior: "smooth" });
+    scrollToId("products");
   };
 
   return (
