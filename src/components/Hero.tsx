@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 const SLIDES = [
@@ -21,11 +21,32 @@ function scrollToId(id: string) {
 
 export default function Hero() {
   const [idx, setIdx] = useState(0);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const clearTimer = useCallback(() => {
+    if (timerRef.current !== null) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+  }, []);
+
+  const startTimer = useCallback(() => {
+    clearTimer();
+    timerRef.current = setInterval(() => setIdx(i => (i + 1) % SLIDES.length), 4500);
+  }, [clearTimer]);
 
   useEffect(() => {
-    const t = setInterval(() => setIdx(i => (i + 1) % SLIDES.length), 4500);
-    return () => clearInterval(t);
-  }, []);
+    startTimer();
+    return () => clearTimer();
+  }, [startTimer, clearTimer]);
+
+  const goTo = useCallback(
+    (i: number) => {
+      setIdx(i);
+      startTimer();
+    },
+    [startTimer],
+  );
 
   // Preload neighbors
   useEffect(() => {
@@ -74,7 +95,11 @@ export default function Hero() {
         </div>
 
         {/* Slider */}
-        <div className="relative aspect-[4/3] md:aspect-[5/4] rounded-2xl overflow-hidden bg-white shadow-elev ring-1 ring-brand-green-border">
+        <div
+          className="relative aspect-[4/3] md:aspect-[5/4] rounded-2xl overflow-hidden bg-white shadow-elev ring-1 ring-brand-green-border"
+          onMouseEnter={clearTimer}
+          onMouseLeave={startTimer}
+        >
           {SLIDES.map((s, i) => (
             <img
               key={s.src}
@@ -84,7 +109,7 @@ export default function Hero() {
               height={960}
               loading={i === 0 ? "eager" : "lazy"}
               fetchPriority={i === 0 ? "high" : "auto"}
-              decoding={i === 0 ? "sync" : "async"}
+              decoding="async"
               className={`absolute inset-0 w-full h-full object-cover crisp-img transition-opacity duration-700 ${
                 i === idx ? "opacity-100" : "opacity-0"
               }`}
@@ -96,15 +121,15 @@ export default function Hero() {
             </span>
             <div className="flex gap-2">
               <button
-                onClick={() => setIdx(i => (i - 1 + SLIDES.length) % SLIDES.length)}
-                className="w-9 h-9 rounded-full bg-white/95 text-brand-green flex items-center justify-center hover:bg-white"
+                onClick={() => goTo((idx - 1 + SLIDES.length) % SLIDES.length)}
+                className="w-11 h-11 md:w-10 md:h-10 rounded-full bg-white/95 text-brand-green flex items-center justify-center hover:bg-white shrink-0"
                 aria-label="Previous"
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
               <button
-                onClick={() => setIdx(i => (i + 1) % SLIDES.length)}
-                className="w-9 h-9 rounded-full bg-white/95 text-brand-green flex items-center justify-center hover:bg-white"
+                onClick={() => goTo((idx + 1) % SLIDES.length)}
+                className="w-11 h-11 md:w-10 md:h-10 rounded-full bg-white/95 text-brand-green flex items-center justify-center hover:bg-white shrink-0"
                 aria-label="Next"
               >
                 <ChevronRight className="w-4 h-4" />
@@ -112,16 +137,20 @@ export default function Hero() {
             </div>
           </div>
           {/* Dots */}
-          <div className="absolute top-3 right-3 flex gap-1.5">
+          <div className="absolute top-3 right-3 flex items-center gap-0">
             {SLIDES.map((_, i) => (
               <button
                 key={i}
-                onClick={() => setIdx(i)}
-                className={`h-1.5 rounded-full transition-all ${
-                  i === idx ? "bg-brand-green w-6" : "bg-white/80 w-1.5"
-                }`}
+                onClick={() => goTo(i)}
+                className="flex items-center justify-center w-7 h-7"
                 aria-label={`Slide ${i + 1}`}
-              />
+              >
+                <span
+                  className={`block rounded-full transition-all ${
+                    i === idx ? "bg-brand-green w-5 h-1.5" : "bg-white/80 w-1.5 h-1.5"
+                  }`}
+                />
+              </button>
             ))}
           </div>
         </div>
