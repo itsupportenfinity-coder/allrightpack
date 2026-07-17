@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "sdk_version": "0.23.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "allrightpack-mcp",
+      "version": "0.1.0",
+      "title": "Allright Pack"
+    },
+    "tools": [
+      {
+        "name": "list_categories",
+        "title": "List categories",
+        "description": "List all packaging product categories available at Allright Pack with a count of products in each.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_products",
+        "title": "List products",
+        "description": "List Allright Pack packaging products. Optionally filter by category id (see list_categories) or a text query matching the product name.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "description": "Category id to filter by, e.g. 'stretch-film'."
+            },
+            "query": {
+              "type": "string",
+              "description": "Case-insensitive substring match on product name."
+            },
+            "limit": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "description": "Maximum number of products to return (default 50)."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_product",
+        "title": "Get product",
+        "description": "Get full details for a single Allright Pack product by its id.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Product id, e.g. 'bubble-wrap-10metre'."
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "build_enquiry_link",
+        "title": "Build WhatsApp enquiry link",
+        "description": "Build a WhatsApp enquiry link for one or more Allright Pack products with quantities. Use this to help a customer contact sales.",
+        "annotations": {
+          "readOnlyHint": true,
+          "openWorldHint": true
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Product id"
+                  },
+                  "quantity": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "description": "Quantity to enquire about"
+                  }
+                },
+                "required": [
+                  "id",
+                  "quantity"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1,
+              "description": "List of products and quantities to enquire about."
+            },
+            "note": {
+              "type": "string",
+              "description": "Optional extra note from the customer."
+            }
+          },
+          "required": [
+            "items"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
