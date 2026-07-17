@@ -5,7 +5,9 @@ import Hero from "@/components/Hero";
 import Categories from "@/components/Categories";
 import Shop from "@/components/Shop";
 import WhyUs from "@/components/WhyUs";
+import Industries from "@/components/Industries";
 import Contact from "@/components/Contact";
+import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 import ProductModal from "@/components/ProductModal";
 import CartDrawer from "@/components/CartDrawer";
@@ -31,7 +33,9 @@ export default function Index() {
           onOpenProduct={setOpenProduct}
         />
         <WhyUs />
+        <Industries onCategoryFilter={setActiveCategory} />
         <Contact />
+        <Newsletter />
       </main>
 
       <Footer onCategoryFilter={setActiveCategory} />

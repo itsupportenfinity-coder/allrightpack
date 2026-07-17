@@ -148,7 +148,7 @@ function ProductCard({ product, onClick }: { product: Product; onClick: () => vo
   return (
     <button
       onClick={onClick}
-      className="group text-left bg-white rounded-xl overflow-hidden ring-1 ring-brand-green-border card-hover flex flex-col"
+      className="group text-left bg-white rounded-xl overflow-hidden ring-1 ring-brand-green-border shadow-[0_2px_8px_rgba(0,0,0,0.04)] card-hover flex flex-col"
     >
       <div className="aspect-square bg-white overflow-hidden p-3">
         <img

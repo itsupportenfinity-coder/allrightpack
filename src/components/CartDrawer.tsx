@@ -1,7 +1,8 @@
 import { useEffect, useId, useRef, useState } from "react";
-import { Minus, Plus, ShoppingCart, Trash2, X } from "lucide-react";
+import { Minus, Package, Plus, ShoppingCart, Trash2, X } from "lucide-react";
 import { useEnquiry } from "@/lib/enquiry";
 import { handleImgError } from "@/lib/image";
+import { scrollToId } from "@/lib/utils";
 
 export default function CartDrawer({ open, onClose }: { open: boolean; onClose: () => void }) {
   const { items, setQty, remove, clear } = useEnquiry();
@@ -114,10 +115,25 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
 
         <div className="flex-1 overflow-y-auto p-5">
           {items.length === 0 ? (
-            <div className="text-center py-16 text-[hsl(var(--gray))]">
-              <ShoppingCart className="w-16 h-16 mx-auto text-[hsl(var(--gray))] mb-4" />
-              <p className="text-sm">Your enquiry cart is empty.</p>
-              <p className="text-xs mt-2">Browse our products and add items to enquire.</p>
+            <div className="flex flex-col items-center justify-center h-full text-center px-4">
+              <div className="w-20 h-20 rounded-full bg-brand-green-pale text-brand-green flex items-center justify-center mb-6">
+                <Package className="w-9 h-9" />
+              </div>
+              <h3 className="text-lg font-bold text-foreground mb-2">
+                Your Enquiry Cart is Empty
+              </h3>
+              <p className="text-sm text-[hsl(var(--gray))] max-w-xs leading-relaxed">
+                Start building your quotation by adding products from our catalog.
+              </p>
+              <button
+                onClick={() => {
+                  onClose();
+                  requestAnimationFrame(() => scrollToId("products"));
+                }}
+                className="btn-green mt-6 w-full max-w-[260px]"
+              >
+                Browse Products
+              </button>
             </div>
           ) : (
             <ul className="space-y-3">

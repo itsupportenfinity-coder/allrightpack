@@ -8,6 +8,7 @@ const NAV = [
   { id: "categories", label: "Categories" },
   { id: "products", label: "Shop" },
   { id: "why", label: "Why Us" },
+  { id: "industries", label: "INDUSTRIES - ", greenLabel: "we serve" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -77,19 +78,22 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
         </button>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-0.5">
           {NAV.map(n => (
             <button
               key={n.id}
               onClick={() => handleNav(n.id)}
               aria-current={active === n.id ? "page" : undefined}
-              className={`px-3.5 py-2 rounded-md text-[13.5px] font-bold uppercase tracking-wide transition-colors focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
+              className={`px-3 py-2 rounded-md text-[13.5px] font-bold tracking-wide transition-colors focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
+                n.id !== "industries" ? "uppercase" : ""
+              } ${
                 active === n.id
                   ? "text-brand-green bg-brand-green-pale"
                   : "text-[hsl(var(--gray-dark))] hover:text-brand-green hover:bg-brand-green-pale"
               }`}
             >
               {n.label}
+              {n.greenLabel && <span className="text-brand-green">{n.greenLabel}</span>}
             </button>
           ))}
         </nav>
@@ -142,13 +146,16 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
                 key={n.id}
                 onClick={() => handleNav(n.id)}
                 aria-current={active === n.id ? "page" : undefined}
-                className={`text-left px-3 py-3 rounded-md text-sm font-bold uppercase tracking-wide focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
+                className={`text-left px-3 py-3 rounded-md text-sm font-bold tracking-wide focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
+                  n.id !== "industries" ? "uppercase" : ""
+                } ${
                   active === n.id
                     ? "text-brand-green bg-brand-green-pale"
                     : "text-[hsl(var(--gray-dark))] hover:bg-brand-green-pale"
                 }`}
               >
                 {n.label}
+                {n.greenLabel && <span className="text-brand-green">{n.greenLabel}</span>}
               </button>
             ))}
             <a
