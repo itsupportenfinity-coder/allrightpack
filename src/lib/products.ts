@@ -162,14 +162,20 @@ export function getDescription(p: Product): string {
 /* ------------------------------------------------------------------ */
 
 const CAT_BANNERS: Record<string, string> = {
-  "POF Shrink Film": "/images/banners/hero-1.webp",
-  "Packing Tapes": "/images/banners/tapes.webp",
-  "Stretch Film": "/images/banners/hero-2.webp",
-  "Industrial Strapping": "/images/banners/strapping.webp",
-  "Thermal Paper Roll": "/images/banners/thermal.webp",
-  "Thermal Labels": "/images/banners/labels.webp",
-  "Packaging Machines": "/images/banners/machines.webp",
-  "Cling Film": "/images/banners/hero-3.webp",
+  "POF Shrink Film": "/images/categories/pof-shrink-film.webp",
+  "Packing Tapes": "/images/categories/packing-tapes.webp",
+  "Stretch Film": "/images/categories/stretch-film.webp",
+  "Industrial Strapping": "/images/categories/industrial-strapping.webp",
+  "Thermal Paper Roll": "/images/categories/thermal-roll.webp",
+  "Thermal Labels": "/images/categories/thermal-labels.webp",
+  "Packaging Machines": "/images/categories/packaging-machines.webp",
+  "Cling Film": "/images/categories/cling-film.webp",
+  "Bubble Rolls": "/images/categories/bubble-rolls.jpg",
+  "Corrugated Rolls": "/images/categories/corrugated-rolls.jpg",
+  "Foam Rolls": "/images/categories/foam-rolls.jpg",
+  "Gloves": "/images/categories/gloves.jpg",
+  "Packing Tools": "/images/categories/packing-tools.jpg",
+  "Vacuum Bags": "/images/categories/vacuum-bags.jpg",
 };
 
 const CAT_BLURB: Record<string, string> = {
