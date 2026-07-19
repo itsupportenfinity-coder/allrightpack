@@ -26,7 +26,7 @@ export default function Hero() {
 
   const startTimer = useCallback(() => {
     clearTimer();
-    timerRef.current = setInterval(() => setIdx(i => (i + 1) % SLIDES.length), 4500);
+    timerRef.current = setInterval(() => setIdx(i => (i + 1) % SLIDES.length), 2500);
   }, [clearTimer]);
 
   useEffect(() => {
@@ -55,18 +55,18 @@ export default function Hero() {
       <div className="container-arp pt-10 md:pt-14 pb-12 md:pb-20 grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-12 items-center">
         {/* Copy */}
         <div className="text-center lg:text-left">
-          <span className="inline-flex items-center gap-2 text-xs font-bold cond uppercase tracking-wider text-brand-green bg-brand-green-pale px-3 py-1.5 rounded-full">
+          <span className="inline-flex items-center gap-2 text-xs font-bold cond uppercase tracking-wider text-brand-green bg-brand-green-pale px-3 py-1.5 rounded-full opacity-0 animate-fade-in">
             <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse" />
             Kuwait's #1 Packaging Supplier
           </span>
-          <h1 className="display text-5xl md:text-6xl lg:text-7xl mt-5 leading-[0.95] font-normal">
+          <h1 className="display text-5xl md:text-6xl lg:text-7xl mt-5 leading-[0.95] font-normal opacity-0 animate-fade-in delay-100">
             Pack <span className="text-brand-green">Smart.</span><br />
             Ship <span className="text-brand-green">Strong.</span>
           </h1>
-          <p className="mt-5 text-base md:text-lg text-[hsl(var(--gray-dark))] max-w-xl mx-auto lg:mx-0">
+          <p className="mt-5 text-base md:text-lg text-[hsl(var(--gray-dark))] max-w-xl mx-auto lg:mx-0 opacity-0 animate-fade-in delay-200">
             Professional packaging solutions for every industry in Kuwait. Shrink films, strapping, tapes, thermal labels — delivered free, fast.
           </p>
-          <div className="mt-7 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+          <div className="mt-7 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start opacity-0 animate-fade-in delay-300">
             <button onClick={() => scrollToId("products")} className="btn-green">
               Shop All Products <ArrowRight className="w-4 h-4" />
             </button>
@@ -74,7 +74,7 @@ export default function Hero() {
               Get a Quote
             </button>
           </div>
-          <div className="mt-9 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0 border-t border-brand-green-border pt-6">
+          <div className="mt-9 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0 border-t border-brand-green-border pt-6 opacity-0 animate-fade-in delay-[400ms]">
             {[
               ["500+", "Happy Clients"],
               ["14+", "Product Lines"],
@@ -95,25 +95,24 @@ export default function Hero() {
           onMouseLeave={startTimer}
         >
           {SLIDES.map((s, i) => (
-            <img
-              key={s.src}
-              src={s.src}
-              alt={s.badge}
-              width={1200}
-              height={960}
-              loading={i === 0 ? "eager" : "lazy"}
-              {...{ fetchpriority: i === 0 ? "high" : "auto" }}
-              decoding="async"
-              className={`absolute inset-0 w-full h-full object-cover crisp-img transition-opacity duration-700 ${
-                i === idx ? "opacity-100" : "opacity-0"
-              }`}
-              onError={handleImgError}
-            />
+            <div key={s.src} className="absolute inset-0 overflow-hidden">
+              <img
+                src={s.src}
+                alt={s.badge}
+                width={1200}
+                height={960}
+                loading={i === 0 ? "eager" : "lazy"}
+                {...{ fetchpriority: i === 0 ? "high" : "auto" }}
+                decoding="async"
+                className={`w-full h-full object-cover crisp-img will-change-transform transition-opacity duration-700 ease-in-out ${
+                  i === idx ? "opacity-100 animate-ken-burns" : "opacity-0"
+                }`}
+                onError={handleImgError}
+                style={{ transformOrigin: "center center" }}
+              />
+            </div>
           ))}
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-5 flex items-end justify-between">
-            <span className="cond text-xs md:text-sm font-bold uppercase tracking-wider bg-white/95 text-brand-green px-3 py-1.5 rounded-md">
-              {SLIDES[idx].badge}
-            </span>
+          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-5 flex items-end justify-end">
             <div className="flex gap-2">
               <button
                 onClick={() => goTo((idx - 1 + SLIDES.length) % SLIDES.length)}
