@@ -11,7 +11,7 @@ const ITEMS = [
 export default function AnnouncementBar() {
   const loop = [...ITEMS, ...ITEMS];
   return (
-    <div className="bg-brand-green text-white overflow-hidden py-2 text-xs font-bold tracking-wider cond">
+    <div className="bg-brand-green text-white overflow-hidden py-2 text-xs font-bold tracking-wider">
       <div className="ticker inline-flex gap-14 whitespace-nowrap pl-14">
         {loop.map((item, i) => (
           <span key={i} className="opacity-95 inline-flex items-center gap-1.5">

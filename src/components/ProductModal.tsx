@@ -195,11 +195,11 @@ export default function ProductModal({
 
             {/* Tags */}
             <div className="mt-3 flex flex-wrap gap-2">
-              <span className="text-[11px] cond font-bold uppercase tracking-wider text-brand-green bg-brand-green-pale px-2.5 py-1 rounded">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-brand-green bg-brand-green-pale px-2.5 py-1 rounded">
                 {product.categoryLabel}
               </span>
               {specs[0] && (
-                <span className="text-[11px] cond font-bold uppercase tracking-wider text-brand-green bg-brand-green-pale px-2.5 py-1 rounded">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-brand-green bg-brand-green-pale px-2.5 py-1 rounded">
                   {specs[0].value}
                 </span>
               )}
@@ -210,7 +210,7 @@ export default function ProductModal({
 
             {/* Specifications */}
             <div className="mt-5 rounded-lg bg-brand-green-pale p-4 ring-1 ring-brand-green-border">
-              <div className="text-[11px] cond font-bold uppercase tracking-wider text-brand-green mb-3">
+              <div className="text-[11px] font-bold uppercase tracking-wider text-brand-green mb-3">
                 Specifications
               </div>
               <dl className="text-sm">
@@ -230,7 +230,7 @@ export default function ProductModal({
 
             {/* Quantity */}
             <div className="mt-5 flex items-center gap-3">
-              <label htmlFor="product-qty" className="text-[11px] cond font-bold uppercase tracking-wider text-[hsl(var(--gray))]">
+              <label htmlFor="product-qty" className="text-[11px] font-bold uppercase tracking-wider text-[hsl(var(--gray))]">
                 Qty:
               </label>
               <div className="inline-flex items-center border border-input rounded-md">
@@ -288,7 +288,7 @@ export default function ProductModal({
         {/* Related products */}
         {related.length > 0 && (
           <div className="border-t border-brand-green-border p-5 md:p-8">
-            <div className="text-[11px] cond font-bold uppercase tracking-wider text-brand-green mb-4">
+            <div className="text-[11px] font-bold uppercase tracking-wider text-brand-green mb-4">
               — Related Products
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -310,7 +310,7 @@ export default function ProductModal({
                   </div>
                   <div className="p-2.5 border-t border-brand-green-border">
                     <div className="text-xs font-bold leading-tight line-clamp-2">{r.name}</div>
-                    <div className="mt-1 text-[10px] text-brand-green cond uppercase tracking-wider font-bold">
+                    <div className="mt-1 text-[10px] text-brand-green uppercase tracking-wider font-bold">
                       View →
                     </div>
                   </div>

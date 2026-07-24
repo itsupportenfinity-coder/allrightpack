@@ -152,7 +152,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                     <div className="text-sm font-bold leading-tight line-clamp-2">
                       {product.name}
                     </div>
-                    <div className="text-[11px] text-brand-green cond uppercase tracking-wider font-bold mt-1">
+                    <div className="text-[11px] text-brand-green uppercase tracking-wider font-bold mt-1">
                       {product.categoryLabel}
                     </div>
                     <div className="mt-2 flex items-center justify-between">
@@ -238,13 +238,13 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
           <div className="mt-6 flex items-center gap-3">
             <button
               onClick={handleCancelClear}
-              className="flex-1 cond font-bold uppercase tracking-wider text-sm bg-white text-brand-green border-2 border-brand-green-border rounded-md px-4 py-2.5 hover:border-brand-green hover:bg-brand-green-pale transition-colors focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
+              className="flex-1 font-bold uppercase tracking-wider text-sm bg-white text-brand-green border-2 border-brand-green-border rounded-md px-4 py-2.5 hover:border-brand-green hover:bg-brand-green-pale transition-colors focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
             >
               Cancel
             </button>
             <button
               onClick={handleConfirmClear}
-              className="flex-1 cond font-bold uppercase tracking-wider text-sm bg-destructive text-destructive-foreground rounded-md px-4 py-2.5 hover:bg-destructive/90 transition-colors focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
+              className="flex-1 font-bold uppercase tracking-wider text-sm bg-destructive text-destructive-foreground rounded-md px-4 py-2.5 hover:bg-destructive/90 transition-colors focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
             >
               Clear Cart
             </button>

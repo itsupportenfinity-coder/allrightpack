@@ -46,7 +46,7 @@ export default function Shop({
       <div className="container-arp">
         <div className="flex flex-col md:flex-row gap-6 mb-4">
           <div>
-            <div className="text-xs font-bold uppercase tracking-wider text-brand-green mb-3 cond">
+            <div className="text-xs font-bold uppercase tracking-wider text-brand-green mb-3">
               — All Products
             </div>
             <h2 className="display text-4xl md:text-5xl lg:text-6xl">
@@ -56,7 +56,7 @@ export default function Shop({
         </div>
 
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-6">
-          <div className="text-sm md:text-base font-semibold text-brand-green cond tracking-wide">
+          <div className="text-sm md:text-base font-semibold text-brand-green tracking-wide">
             {activeCategory === "All" && !query.trim()
               ? `Showing ${allProducts.length} products`
               : `Showing ${filtered.length} of ${allProducts.length} products`}
@@ -87,7 +87,7 @@ export default function Shop({
                 setShown(PAGE);
               }}
               aria-pressed={activeCategory === label}
-              className={`shrink-0 px-4 py-2 rounded-full text-xs cond font-bold uppercase tracking-wider transition-all focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
+              className={`shrink-0 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
                 activeCategory === label
                   ? "bg-brand-green text-white"
                   : "bg-white text-[hsl(var(--gray-dark))] ring-1 ring-brand-green-border hover:ring-brand-green hover:text-brand-green"
@@ -160,13 +160,13 @@ function ProductCard({ product, onClick }: { product: Product; onClick: () => vo
         />
       </div>
       <div className="p-3 md:p-4 border-t border-brand-green-border">
-        <div className="text-[11px] uppercase tracking-wider text-brand-green font-bold cond">
+        <div className="text-[11px] uppercase tracking-wider text-brand-green font-bold">
           {product.categoryLabel}
         </div>
         <div className="mt-1 text-sm md:text-[15px] font-bold leading-snug line-clamp-2 min-h-[2.6em]">
           {product.name}
         </div>
-        <div className="mt-3 text-xs cond uppercase tracking-wider font-bold text-brand-green flex items-center gap-1">
+        <div className="mt-3 text-xs uppercase tracking-wider font-bold text-brand-green flex items-center gap-1">
           View Details →
         </div>
       </div>

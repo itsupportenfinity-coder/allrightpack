@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="py-12 md:py-16 bg-[hsl(var(--off))]">
       <div className="container-arp">
         <div className="text-center mb-12">
-          <div className="text-xs font-bold uppercase tracking-wider text-brand-green mb-3 cond">
+          <div className="text-xs font-bold uppercase tracking-wider text-brand-green mb-3">
             — Get in Touch
           </div>
           <h2 className="display text-4xl md:text-5xl lg:text-6xl">
@@ -70,7 +70,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Open All Right Pack location in Google Maps"
-                    className="mt-3 inline-flex items-center gap-1.5 cond font-bold uppercase tracking-wider text-xs bg-brand-green text-white px-3.5 py-2 rounded-md hover:bg-brand-green-mid transition-colors"
+                    className="mt-3 inline-flex items-center gap-1.5 font-bold uppercase tracking-wider text-xs bg-brand-green text-white px-3.5 py-2 rounded-md hover:bg-brand-green-mid transition-colors"
                   >
                     <MapPin className="w-3.5 h-3.5" />
                     Open in Google Maps
@@ -102,7 +102,7 @@ function ContactCard({
         <Icon className="w-5 h-5" />
       </div>
       <div>
-        <div className="text-[11px] cond uppercase tracking-wider font-bold text-brand-green mb-1">
+        <div className="text-[11px] uppercase tracking-wider font-bold text-brand-green mb-1">
           {title}
         </div>
         {lines.map(l => (

@@ -62,7 +62,7 @@ export default function Industries({ onCategoryFilter }: { onCategoryFilter: (la
     <section id="industries" className="py-12 md:py-16 bg-white">
       <div className="container-arp">
         <div className="text-center mb-12">
-          <div className="text-xs font-bold uppercase tracking-wider text-brand-green mb-3 cond">
+          <div className="text-xs font-bold uppercase tracking-wider text-brand-green mb-3">
             — Industries We Serve
           </div>
           <h2 className="display text-7xl md:text-8xl text-foreground leading-none">

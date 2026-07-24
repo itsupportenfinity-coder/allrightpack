@@ -15,7 +15,7 @@ export default function Categories({ onPick }: { onPick: (label: string) => void
     <section id="categories" className="py-12 md:py-16 bg-white">
       <div className="container-arp">
         <div className="mb-10 md:mb-12">
-          <div className="text-xs font-bold uppercase tracking-wider text-brand-green mb-3 cond">
+          <div className="text-xs font-bold uppercase tracking-wider text-brand-green mb-3">
             — Browse by Category
           </div>
           <h2 className="display text-4xl md:text-5xl lg:text-6xl">

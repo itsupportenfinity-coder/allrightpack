@@ -55,7 +55,7 @@ export default function Hero() {
       <div className="container-arp pt-10 md:pt-14 pb-12 md:pb-20 grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-12 items-center">
         {/* Copy */}
         <div className="text-center lg:text-left">
-          <span className="inline-flex items-center gap-2 text-xs font-bold cond uppercase tracking-wider text-brand-green bg-brand-green-pale px-3 py-1.5 rounded-full opacity-0 animate-fade-in">
+          <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-green bg-brand-green-pale px-3 py-1.5 rounded-full opacity-0 animate-fade-in">
             <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse" />
             Kuwait's #1 Packaging Supplier
           </span>
