@@ -46,9 +46,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/bubble-wrap-3-cut.jpg",
+    image: "/images/products/bubble-wrap-3-cut.webp",
     images: [
-      "/images/products/bubble-wrap-3-cut.jpg"
+      "/images/products/bubble-wrap-3-cut.webp"
     ],
     tags: []
   },
@@ -256,9 +256,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/cord-composite-strap-19mm.jpg",
+    image: "/images/products/cord-composite-strap-19mm.webp",
     images: [
-      "/images/products/cord-composite-strap-19mm.jpg"
+      "/images/products/cord-composite-strap-19mm.webp"
     ],
     tags: []
   },
@@ -396,9 +396,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/polyester-terephthalate-pet-strap-9mm.jpg",
+    image: "/images/products/polyester-terephthalate-pet-strap-9mm.webp",
     images: [
-      "/images/products/polyester-terephthalate-pet-strap-9mm.jpg"
+      "/images/products/polyester-terephthalate-pet-strap-9mm.webp"
     ],
     tags: []
   },
@@ -410,9 +410,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/polypropylene-pp-strap-12mm.jpg",
+    image: "/images/products/polypropylene-pp-strap-12mm.webp",
     images: [
-      "/images/products/polypropylene-pp-strap-12mm.jpg"
+      "/images/products/polypropylene-pp-strap-12mm.webp"
     ],
     tags: []
   },
@@ -424,9 +424,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/polypropylene-pp-strap-15mm.jpg",
+    image: "/images/products/polypropylene-pp-strap-15mm.webp",
     images: [
-      "/images/products/polypropylene-pp-strap-15mm.jpg"
+      "/images/products/polypropylene-pp-strap-15mm.webp"
     ],
     tags: []
   },
@@ -438,9 +438,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/polypropylene-pp-strap-9mm.jpg",
+    image: "/images/products/polypropylene-pp-strap-9mm.webp",
     images: [
-      "/images/products/polypropylene-pp-strap-9mm.jpg"
+      "/images/products/polypropylene-pp-strap-9mm.webp"
     ],
     tags: []
   },
@@ -1054,9 +1054,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/brown-packing-tape-1000-yard.jpg",
+    image: "/images/products/brown-packing-tape-1000-yard.webp",
     images: [
-      "/images/products/brown-packing-tape-1000-yard.jpg"
+      "/images/products/brown-packing-tape-1000-yard.webp"
     ],
     tags: []
   },
@@ -1180,9 +1180,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/double-sided-tape.jpg",
+    image: "/images/products/double-sided-tape.webp",
     images: [
-      "/images/products/double-sided-tape.jpg"
+      "/images/products/double-sided-tape.webp"
     ],
     tags: []
   },
@@ -1278,9 +1278,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/red-tape-70-yard.jpg",
+    image: "/images/products/red-tape-70-yard.webp",
     images: [
-      "/images/products/red-tape-70-yard.jpg"
+      "/images/products/red-tape-70-yard.webp"
     ],
     tags: []
   },
@@ -1642,9 +1642,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/barcode-label-100-x-50-x-500-core-40mm.jpg",
+    image: "/images/products/barcode-label-100-x-50-x-500-core-40mm.webp",
     images: [
-      "/images/products/barcode-label-100-x-50-x-500-core-40mm.jpg"
+      "/images/products/barcode-label-100-x-50-x-500-core-40mm.webp"
     ],
     tags: []
   },
@@ -1670,9 +1670,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/barcode-label-100x150x-1000-core-3inch-76mm.jpg",
+    image: "/images/products/barcode-label-100x150x-1000-core-3inch-76mm.webp",
     images: [
-      "/images/products/barcode-label-100x150x-1000-core-3inch-76mm.jpg"
+      "/images/products/barcode-label-100x150x-1000-core-3inch-76mm.webp"
     ],
     tags: []
   },
@@ -1740,9 +1740,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/barcode-label-50-x-25-x5000-core-3inch-76mm.jpg",
+    image: "/images/products/barcode-label-50-x-25-x5000-core-3inch-76mm.webp",
     images: [
-      "/images/products/barcode-label-50-x-25-x5000-core-3inch-76mm.jpg"
+      "/images/products/barcode-label-50-x-25-x5000-core-3inch-76mm.webp"
     ],
     tags: []
   },
@@ -1754,9 +1754,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/barcode-label-58-x-38-x1000.jpg",
+    image: "/images/products/barcode-label-58-x-38-x1000.webp",
     images: [
-      "/images/products/barcode-label-58-x-38-x1000.jpg"
+      "/images/products/barcode-label-58-x-38-x1000.webp"
     ],
     tags: []
   },
@@ -1782,9 +1782,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/barcode-lablel-38-x-25-x-1000.jpg",
+    image: "/images/products/barcode-lablel-38-x-25-x-1000.webp",
     images: [
-      "/images/products/barcode-lablel-38-x-25-x-1000.jpg"
+      "/images/products/barcode-lablel-38-x-25-x-1000.webp"
     ],
     tags: []
   },

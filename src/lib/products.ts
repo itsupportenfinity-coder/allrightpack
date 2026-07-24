@@ -170,12 +170,12 @@ const CAT_BANNERS: Record<string, string> = {
   "Thermal Labels": "/images/categories/thermal-labels.webp",
   "Packaging Machines": "/images/categories/packaging-machines.webp",
   "Cling Film": "/images/categories/cling-film.webp",
-  "Bubble Rolls": "/images/categories/bubble-rolls.jpg",
-  "Corrugated Rolls": "/images/categories/corrugated-rolls.jpg",
-  "Foam Rolls": "/images/categories/foam-rolls.jpg",
-  "Gloves": "/images/categories/gloves.jpg",
-  "Packing Tools": "/images/categories/packing-tools.jpg",
-  "Vacuum Bags": "/images/categories/vacuum-bags.jpg",
+  "Bubble Rolls": "/images/categories/bubble-rolls.webp",
+  "Corrugated Rolls": "/images/categories/corrugated-rolls.webp",
+  "Foam Rolls": "/images/categories/foam-rolls.webp",
+  "Gloves": "/images/categories/gloves.webp",
+  "Packing Tools": "/images/categories/packing-tools.webp",
+  "Vacuum Bags": "/images/categories/vacuum-bags.webp",
 };
 
 const CAT_BLURB: Record<string, string> = {
