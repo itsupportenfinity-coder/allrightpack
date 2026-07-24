@@ -40,9 +40,9 @@ export default function Categories({ onPick }: { onPick: (label: string) => void
                 />
               </div>
               <div className="p-3 md:p-4">
-                <div className="text-[13px] md:text-sm font-bold leading-tight text-foreground line-clamp-2">{c.label}</div>
-                <div className="mt-1 flex items-center justify-between text-[11px]">
-                  <span className="text-[hsl(var(--gray))] font-semibold">{c.count} items</span>
+                <div className="text-sm font-bold leading-snug text-foreground line-clamp-2">{c.label}</div>
+                <div className="mt-1 flex items-center justify-between text-xs">
+                  <span className="text-[hsl(var(--gray))] font-bold">{c.count} items</span>
                   <ArrowRight className="w-3.5 h-3.5 text-brand-green opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
               </div>

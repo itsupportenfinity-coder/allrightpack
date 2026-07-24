@@ -82,7 +82,7 @@ export default function Hero() {
             ].map(([n, l]) => (
               <div key={l} className="text-center lg:text-left">
                 <div className="display text-3xl md:text-4xl text-brand-green leading-none">{n}</div>
-                <div className="text-[11px] uppercase tracking-wider text-[hsl(var(--gray))] mt-1 font-semibold">{l}</div>
+                <div className="text-xs uppercase tracking-wider text-[hsl(var(--gray))] mt-1 font-bold">{l}</div>
               </div>
             ))}
           </div>

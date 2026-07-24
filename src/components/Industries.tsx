@@ -87,7 +87,7 @@ export default function Industries({ onCategoryFilter }: { onCategoryFilter: (la
                 <Icon className="w-6 h-6" />
               </div>
               <div className="font-bold text-base mb-2">{title}</div>
-              <div className="text-sm text-[hsl(var(--gray))] leading-relaxed">{desc}</div>
+              <div className="text-sm text-[hsl(var(--gray))] leading-relaxed font-medium">{desc}</div>
             </button>
           ))}
         </div>

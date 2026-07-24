@@ -57,10 +57,10 @@ export default function Contact() {
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-5 h-5 text-brand-green shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-lg md:text-xl text-foreground leading-none font-semibold tracking-[0.5px]">
-                    All Right Pack
+<div className="text-lg md:text-xl text-foreground leading-none font-bold tracking-[0.5px]">
+                     All Right Pack
                   </div>
-                  <div className="mt-2 text-[13px] leading-snug text-[hsl(var(--gray-dark))]">
+                  <div className="mt-2 text-sm leading-snug text-[hsl(var(--gray-dark))] font-medium">
                     203, Suhaib Complex<br />
                     Office 14<br />
                     Salmiya, Kuwait
@@ -102,7 +102,7 @@ function ContactCard({
         <Icon className="w-5 h-5" />
       </div>
       <div>
-        <div className="text-[11px] uppercase tracking-wider font-bold text-brand-green mb-1">
+        <div className="text-xs uppercase tracking-wider font-bold text-brand-green mb-1">
           {title}
         </div>
         {lines.map(l => (

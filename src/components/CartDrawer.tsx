@@ -149,10 +149,10 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                     onError={handleImgError}
                   />
                   <div className="flex-1 min-w-0">
-                    <div className="text-sm font-bold leading-tight line-clamp-2">
-                      {product.name}
+<div className="text-sm font-bold leading-snug line-clamp-2">
+                       {product.name}
                     </div>
-                    <div className="text-[11px] text-brand-green uppercase tracking-wider font-bold mt-1">
+                    <div className="text-xs text-brand-green uppercase tracking-wider font-bold mt-1">
                       {product.categoryLabel}
                     </div>
                     <div className="mt-2 flex items-center justify-between">

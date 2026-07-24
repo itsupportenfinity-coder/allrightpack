@@ -84,7 +84,7 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
               key={n.id}
               onClick={() => handleNav(n.id)}
               aria-current={active === n.id ? "page" : undefined}
-              className={`px-3 py-2 rounded-md text-[13.5px] font-bold tracking-wide transition-colors focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
+              className={`px-3 py-2 rounded-md text-sm font-bold tracking-wide transition-colors focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 ${
                 n.id !== "industries" ? "uppercase" : ""
               } ${
                 active === n.id
@@ -114,7 +114,7 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
           >
             <ShoppingCart className="w-4 h-4" />
             {count > 0 && (
-              <span className="absolute -top-1.5 -right-1.5 bg-brand-green text-white text-[10px] font-bold rounded-full min-w-5 h-5 px-1 flex items-center justify-center">
+              <span className="absolute -top-1.5 -right-1.5 bg-brand-green text-white text-xs font-bold rounded-full min-w-5 h-5 px-1 flex items-center justify-center">
                 {count}
               </span>
             )}

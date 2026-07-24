@@ -56,7 +56,7 @@ export default function Shop({
         </div>
 
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-6">
-          <div className="text-sm md:text-base font-semibold text-brand-green tracking-wide">
+          <div className="text-sm md:text-base font-bold text-brand-green tracking-wide">
             {activeCategory === "All" && !query.trim()
               ? `Showing ${allProducts.length} products`
               : `Showing ${filtered.length} of ${allProducts.length} products`}
@@ -95,7 +95,7 @@ export default function Shop({
             >
               {label}
               {label !== "All" && (
-                <span className={`ml-1.5 text-[11px] font-extrabold ${activeCategory === label ? "text-white/80" : "text-brand-green"}`}>
+                <span className={`ml-1.5 text-xs font-extrabold ${activeCategory === label ? "text-white/80" : "text-brand-green"}`}>
                   {cats.find(c => c.label === label)?.count}
                 </span>
               )}
@@ -160,7 +160,7 @@ function ProductCard({ product, onClick }: { product: Product; onClick: () => vo
         />
       </div>
       <div className="p-3 md:p-4 border-t border-brand-green-border">
-        <div className="text-[11px] uppercase tracking-wider text-brand-green font-bold">
+        <div className="text-xs uppercase tracking-wider text-brand-green font-bold">
           {product.categoryLabel}
         </div>
         <div className="mt-1 text-sm md:text-[15px] font-bold leading-snug line-clamp-2 min-h-[2.6em]">

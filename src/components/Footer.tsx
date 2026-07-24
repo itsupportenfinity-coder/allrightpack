@@ -100,7 +100,7 @@ export default function Footer({ onCategoryFilter }: { onCategoryFilter: (label:
               <div className="text-[11px] cond uppercase tracking-wider font-bold text-brand-green mb-2">
                 Hours
               </div>
-              <div className="text-xs text-white/55 leading-relaxed">
+              <div className="text-xs text-white/55 leading-relaxed font-medium">
                 Sat – Thu · 8AM – 6PM<br />
                 Friday: Closed
               </div>
@@ -112,7 +112,7 @@ export default function Footer({ onCategoryFilter }: { onCategoryFilter: (label:
           <div>© {new Date().getFullYear()} All Right Pack, Kuwait. All rights reserved.</div>
           <div className="flex gap-2">
             {["Trusted Packaging Supplier", "Industrial Packaging Solutions", "Serving Businesses Across Kuwait"].map(p => (
-              <span key={p} className="px-2 py-1 bg-white/5 rounded text-[11px] font-bold tracking-wider text-brand-green">
+              <span key={p} className="px-2 py-1 bg-white/5 rounded text-xs font-bold tracking-wider text-brand-green">
                 {p}
               </span>
             ))}
