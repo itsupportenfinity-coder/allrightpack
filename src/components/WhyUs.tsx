@@ -13,7 +13,7 @@ export default function WhyUs() {
     <section id="why" className="py-12 md:py-16 bg-white">
       <div className="container-arp">
         <div className="text-center mb-12">
-          <div className="text-xs font-bold uppercase tracking-[0.2em] text-brand-green mb-3 cond">
+          <div className="text-xs font-bold uppercase tracking-wider text-brand-green mb-3 cond">
             — Why Choose ARP
           </div>
           <h2 className="display text-4xl md:text-5xl lg:text-6xl">

@@ -86,7 +86,7 @@ export default function Footer({ onCategoryFilter }: { onCategoryFilter: (label:
 
           {/* Company */}
           <div>
-            <div className="text-[11px] cond uppercase tracking-[0.2em] font-bold text-brand-green mb-4">
+            <div className="text-[11px] cond uppercase tracking-wider font-bold text-brand-green mb-4">
               Company
             </div>
             <ul className="space-y-2.5 text-sm">
@@ -97,7 +97,7 @@ export default function Footer({ onCategoryFilter }: { onCategoryFilter: (label:
               <li><a href="https://wa.me/96560005276?text=Hi%20All%20Right%20Pack%21" target="_blank" rel="noreferrer" className="text-white/65 hover:text-white transition-colors">WhatsApp Us</a></li>
             </ul>
             <div className="mt-6">
-              <div className="text-[11px] cond uppercase tracking-[0.2em] font-bold text-brand-green mb-2">
+              <div className="text-[11px] cond uppercase tracking-wider font-bold text-brand-green mb-2">
                 Hours
               </div>
               <div className="text-xs text-white/55 leading-relaxed">
@@ -112,7 +112,7 @@ export default function Footer({ onCategoryFilter }: { onCategoryFilter: (label:
           <div>© {new Date().getFullYear()} All Right Pack, Kuwait. All rights reserved.</div>
           <div className="flex gap-2">
             {["Trusted Packaging Supplier", "Industrial Packaging Solutions", "Serving Businesses Across Kuwait"].map(p => (
-              <span key={p} className="px-2 py-1 bg-white/5 rounded text-[10px] cond font-bold tracking-wider text-brand-green">
+              <span key={p} className="px-2 py-1 bg-white/5 rounded text-[11px] cond font-bold tracking-wider text-brand-green">
                 {p}
               </span>
             ))}
@@ -134,7 +134,7 @@ function FooterCol({
 }) {
   return (
     <div>
-      <div className="text-[11px] cond uppercase tracking-[0.2em] font-bold text-brand-green mb-4">
+      <div className="text-[11px] cond uppercase tracking-wider font-bold text-brand-green mb-4">
         {title}
       </div>
       <ul className="space-y-2.5 text-sm">

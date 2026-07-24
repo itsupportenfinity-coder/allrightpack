@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="py-12 md:py-16 bg-[hsl(var(--off))]">
       <div className="container-arp">
         <div className="text-center mb-12">
-          <div className="text-xs font-bold uppercase tracking-[0.2em] text-brand-green mb-3 cond">
+          <div className="text-xs font-bold uppercase tracking-wider text-brand-green mb-3 cond">
             — Get in Touch
           </div>
           <h2 className="display text-4xl md:text-5xl lg:text-6xl">
@@ -57,7 +57,7 @@ export default function Contact() {
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-5 h-5 text-brand-green shrink-0 mt-0.5" />
                 <div>
-                  <div className="display text-lg md:text-xl text-foreground leading-none">
+                  <div className="text-lg md:text-xl text-foreground leading-none font-semibold tracking-[0.5px]">
                     All Right Pack
                   </div>
                   <div className="mt-2 text-[13px] leading-snug text-[hsl(var(--gray-dark))]">

@@ -103,7 +103,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
       <div className="absolute inset-0 bg-black/55" onClick={onClose} />
       <aside className="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-elev flex flex-col animate-fade-in">
         <header className="flex items-center justify-between p-5 border-b border-brand-green-border">
-          <h3 className="display text-2xl">Enquiry Cart</h3>
+          <h3 className="text-2xl font-bold tracking-[0.5px]">Enquiry Cart</h3>
           <button
             onClick={onClose}
             className="w-9 h-9 rounded-md bg-brand-green-pale text-brand-green hover:bg-brand-green hover:text-white transition-colors flex items-center justify-center focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2"
@@ -152,7 +152,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
                     <div className="text-sm font-bold leading-tight line-clamp-2">
                       {product.name}
                     </div>
-                    <div className="text-[10px] text-brand-green cond uppercase tracking-wider font-bold mt-1">
+                    <div className="text-[11px] text-brand-green cond uppercase tracking-wider font-bold mt-1">
                       {product.categoryLabel}
                     </div>
                     <div className="mt-2 flex items-center justify-between">
@@ -230,7 +230,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
         >
           <div className="flex items-center gap-3">
             <Trash2 className="w-6 h-6 text-destructive shrink-0" />
-            <h3 id={confirmTitleId} className="display text-xl text-foreground">Clear Enquiry Cart</h3>
+            <h3 id={confirmTitleId} className="text-xl text-foreground font-semibold tracking-[0.5px]">Clear Enquiry Cart</h3>
           </div>
           <p className="mt-3 text-sm text-[hsl(var(--gray-dark))] leading-relaxed">
             Are you sure you want to remove all products from your enquiry cart? This action cannot be undone.

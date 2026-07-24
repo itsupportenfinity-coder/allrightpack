@@ -46,7 +46,7 @@ export default function Shop({
       <div className="container-arp">
         <div className="flex flex-col md:flex-row gap-6 mb-4">
           <div>
-            <div className="text-xs font-bold uppercase tracking-[0.2em] text-brand-green mb-3 cond">
+            <div className="text-xs font-bold uppercase tracking-wider text-brand-green mb-3 cond">
               — All Products
             </div>
             <h2 className="display text-4xl md:text-5xl lg:text-6xl">
@@ -95,7 +95,7 @@ export default function Shop({
             >
               {label}
               {label !== "All" && (
-                <span className={`ml-1.5 text-[10px] font-extrabold ${activeCategory === label ? "text-white/80" : "text-brand-green"}`}>
+                <span className={`ml-1.5 text-[11px] font-extrabold ${activeCategory === label ? "text-white/80" : "text-brand-green"}`}>
                   {cats.find(c => c.label === label)?.count}
                 </span>
               )}
@@ -105,7 +105,7 @@ export default function Shop({
 
         {visible.length === 0 ? (
           <div className="py-16 md:py-20 text-center">
-            <h3 className="display text-2xl text-foreground">No products found</h3>
+            <h3 className="text-2xl text-foreground font-bold tracking-[0.5px]">No products found</h3>
             <p className="mt-2 text-sm text-[hsl(var(--gray-dark))] max-w-sm mx-auto leading-relaxed">
               We couldn't find any products matching your search or selected category.
             </p>
@@ -160,7 +160,7 @@ function ProductCard({ product, onClick }: { product: Product; onClick: () => vo
         />
       </div>
       <div className="p-3 md:p-4 border-t border-brand-green-border">
-        <div className="text-[10px] uppercase tracking-wider text-brand-green font-bold cond">
+        <div className="text-[11px] uppercase tracking-wider text-brand-green font-bold cond">
           {product.categoryLabel}
         </div>
         <div className="mt-1 text-sm md:text-[15px] font-bold leading-snug line-clamp-2 min-h-[2.6em]">
