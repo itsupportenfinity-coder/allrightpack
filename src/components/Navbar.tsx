@@ -70,7 +70,7 @@ export default function Navbar({ onOpenCart }: { onOpenCart: () => void }) {
           aria-label="All Right Pack home"
         >
           <img
-            src="/images/brand/logo.png"
+            src="/images/brand/logo.webp"
             alt="All Right Pack"
             className="h-9 md:h-11 w-auto"
             loading="eager"

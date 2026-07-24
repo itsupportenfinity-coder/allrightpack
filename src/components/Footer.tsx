@@ -15,7 +15,7 @@ export default function Footer({ onCategoryFilter }: { onCategoryFilter: (label:
           <div className="lg:col-span-1">
             <div className="bg-white inline-block rounded-lg p-3 mb-5">
               <img
-                src="/images/brand/logo.png"
+                src="/images/brand/logo.webp"
                 alt="All Right Pack"
                 className="h-12 w-auto"
                 loading="lazy"

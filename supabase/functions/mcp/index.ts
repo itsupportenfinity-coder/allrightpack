@@ -1306,9 +1306,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/special-offer-tapes.png",
+    image: "/images/products/special-offer-tapes.webp",
     images: [
-      "/images/products/special-offer-tapes.png"
+      "/images/products/special-offer-tapes.webp"
     ],
     tags: []
   },
@@ -1684,9 +1684,9 @@ var products_default = [
     description: "",
     price: "100.000",
     currency: null,
-    image: "/images/products/barcode-label-100x150x-500-core-40mm.png",
+    image: "/images/products/barcode-label-100x150x-500-core-40mm.webp",
     images: [
-      "/images/products/barcode-label-100x150x-500-core-40mm.png"
+      "/images/products/barcode-label-100x150x-500-core-40mm.webp"
     ],
     tags: []
   },
